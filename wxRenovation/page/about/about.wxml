@@ -1,0 +1,7 @@
+<image class="top-img" src="../../image/index/more.jpg" mode="widthFix"></image>
+<view class="menu">
+  <text class="active" bindtap="changeMenu" data-val="about_us">关于我们</text>
+</view>
+<view class="i-line">联系方式：0515-88896868<text class="fr" bindtap="toCall" data-id="0515-88896868">点击拨打</text></view>
+<view class="i-line">手机号：18068894188<text class="fr" bindtap="toCall" data-id="18068894188">点击拨打</text></view>
+<view class="i-line">地址：盐城金太阳装饰城5楼圣豪洲装饰<text class="fr" bindtap='toGo'>点击导航</text></view>

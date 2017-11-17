@@ -1,0 +1,19 @@
+<!-- <swiper indicator-color="#dddddd" indicator-active-color="#99ceee" indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper> -->
+<view class="title">{{detailInfo.title}}</view>
+<view class="detail-title">
+  <text>菜品详情</text>
+</view>
+<view class="detail">
+  <block wx:for="{{content}}" wx:key="unique">
+    <view class="content">{{item}}</view>
+  </block>
+  <block wx:for="{{images}}" wx:key="unique">
+    <image src="{{imgUrl}}{{item}}" bindload="imgLoad" bindtap="bigImg"  data-val="{{index}}" data-index="{{ index }}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+  </block>
+</view>

@@ -1,0 +1,41 @@
+.order-item{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+.order-img{
+  width: 200rpx;
+  height: 160rpx;
+  float: left;
+}
+.item-detail{
+  float: left;
+  overflow: hidden;
+  padding-left: 20rpx;
+}
+.item-price{
+  margin-top: 70rpx;
+  color: #ff6600;
+}
+.orderNums{
+  position: absolute;
+  right: 30rpx;
+  bottom: 20rpx;
+}
+.status{
+  position: absolute;
+  right: 30rpx;
+  color: #666;
+}
+.orderNo{
+  height:70rpx;
+  line-height:70rpx;
+  background:#fff;
+  padding:0 30rpx;
+  border-bottom:2rpx solid #ddd;
+  color: #666;
+  margin-top: 30rpx;
+  position: relative;
+}

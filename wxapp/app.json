@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/attach/attach",
+    "pages/newcard/newcard",
+    "pages/cardholder_confirm/cardholder_confirm",
+    "pages/cardholder/cardholder",
+    "pages/banner/banner",
+    "pages/picture/picture",
+    "pages/resultSucc/resultSucc",
+    "pages/holderSucc/holderSucc",
+    "pages/resultFail/resultFail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2072cf",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "找TA申请附属卡",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh":"false"
+  },
+"networkTimeout": {
+  "request": 100000,
+  "connectSocket": 20000,
+  "uploadFile": 20000,
+  "downloadFile": 20000
+},
+  "debug": false
+}

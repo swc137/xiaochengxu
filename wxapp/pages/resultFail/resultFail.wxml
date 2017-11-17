@@ -1,0 +1,17 @@
+<!--pages/resultFail/resultFail.wxml-->
+<view class="wrapper">
+    <view class="content border-t border">
+        <view class="title_box font_36">
+            <text class="title">{{succTit}}</text>
+        </view>
+        <view class="result">
+            <image class="icon-image" src="../images/failure.png"></image>
+        </view>
+        <view class="desc_box font_26 color_99">
+            <text class="desc">{{desc}}</text>
+        </view>
+    </view>
+    <view class="btn_white border font_30 color_cf">
+        <text></text>
+    </view>
+</view>

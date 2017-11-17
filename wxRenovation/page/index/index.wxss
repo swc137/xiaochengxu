@@ -1,0 +1,139 @@
+swiper{
+  height: 400rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  overflow: hidden;
+  padding: 40rpx 0;
+  background-color: #fff;
+}
+.menu-item{
+  width:25%;
+  float:left;
+  text-align:center;
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+}
+.menu-item image{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  box-shadow: 4rpx 6rpx 8rpx #ddd;
+  border-radius: 50%;
+}
+.menu-item text{
+  margin-top: 10rpx;
+}
+.notice{
+  padding: 0 30rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  line-height: 80rpx;
+  position: relative;
+}
+.notice image{
+  width: 38rpx;
+  height: 30rpx;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.notice .notice-text{
+  color: #666;
+  margin-left: 50rpx;
+  width:95%;
+}
+.more{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 30rpx;
+  color: #666;
+}
+.accessory{
+  position:relative;
+  height: 300rpx;
+}
+.accessory .index1{
+  width: 50%;
+  height: 300rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.accessory .index2{
+  width: 50%;
+  height: 150rpx;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.accessory .index3{
+  width: 50%;
+  height: 150rpx;
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+.banner_center{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 28rpx;
+}
+.product{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.product-list,.person-list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.product-item{
+  width: 48%;
+  margin-top: 30rpx;
+}
+.product-item image{
+  height: 240rpx;
+  width: 100%;
+  background-color:#efefef;
+  box-shadow:4rpx 12rpx 16rpx #bbb;
+}
+.person-item{
+  width: 100%;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.person-item image{
+  float: left;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.person-content{
+  width: 70%;
+  float: left;
+  margin-top: 16rpx;
+  margin-left: 30rpx;
+}
+.page-body-line{
+  position:fixed;
+  bottom:60rpx;
+  right:20rpx;
+  width:78rpx;
+  height:78rpx;
+  background-color: #2072cf;
+  border-radius: 50%;
+}
+.page-body-line contact-button{
+  position: absolute;
+  top: 14rpx;
+  left: 12rpx;
+}

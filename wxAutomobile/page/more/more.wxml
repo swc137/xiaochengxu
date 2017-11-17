@@ -1,0 +1,17 @@
+<image class="top-img" src="../../image/index/more.jpg"></image>
+<view class="menu">
+  <text class="{{about_us}}" bindtap="changeMenu" data-val="about_us">关于我们</text>
+  <text class="{{company_info}}" bindtap="changeMenu" data-val="company_info">公司简介</text>
+</view>
+<view>
+  <map style="width: 100%; height: 500rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" scale="14"></map>
+  <view class="detail">
+    <view class="title">{{info.title}}</view>
+    <block wx:for="{{content}}" wx:key="unique">
+      <view class="content">{{item}}</view>
+    </block>
+    <block wx:for="{{images}}" wx:key="unique">
+      <image src="{{imgUrl}}{{item}}" mode="scaleToFill" bindload="imgLoad"  data-val="{{index}}" data-index="{{ index }}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+    </block>
+  </view>
+</view>

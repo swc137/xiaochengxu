@@ -1,0 +1,34 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{topList}}"  wx:key="unique">
+  <view class="goods-item">
+    <image src='{{imgUrl}}{{item.info.logo_img.value}}'></image>
+    <view class="goods-info">
+      <view>{{item.info.title.value}}</view>
+      <view class="goods-bottom">
+        <text class="color-f2 goods-price">¥{{item.info.price.value}}</text>
+        <text class="fr look" data-id="{{item.md5_id}}" bindtap="toDetail">查看详情</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+<view class="product-list">
+  <text class="pro-title">热门商品</text>
+  <view class="list">
+    <block wx:for="{{productList}}"  wx:key="unique">
+      <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+        <view class="product-name more-overflow">{{item.info.title.value}}</view>
+        <view class="color-f2">¥{{item.info.price.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>

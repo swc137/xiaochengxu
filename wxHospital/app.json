@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "盐城协和医院",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": false
+}

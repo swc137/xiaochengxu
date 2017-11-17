@@ -1,0 +1,55 @@
+.top-area{
+  height: 280rpx;
+  background: #fd424b;
+  text-align: center;
+  position: relative;
+  padding-top: 30rpx;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+.integral{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  background-color: #f8ba34;
+  line-height: 180rpx;
+  text-align: center;
+  border: 4rpx solid #fff;
+  font-size: 46rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.top-text{
+  margin-top: 20rpx;
+}
+.top-detail{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.shop{
+  background: #fff;
+}
+.shop-title{
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  padding: 20rpx 0;
+}
+.shopList{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between; 
+  padding: 0 30rpx;
+}
+.shopItem{
+  width: 47%;
+  margin-bottom: 30rpx;
+}
+.shopItem image{
+  width: 100%;
+  height: 320rpx;
+  background: #eee;
+}

@@ -1,0 +1,61 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="product-list">
+  <text class="pro-title">门窗</text>
+  <view class="list">
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+  </view>
+</view>
+<view class="loading">查看更多></view>
+
+<view class="product-list">
+  <text class="pro-title">门窗</text>
+  <view class="list">
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+  </view>
+</view>
+<view class="loading">查看更多></view>

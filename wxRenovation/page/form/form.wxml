@@ -1,0 +1,25 @@
+<form bindsubmit="formSubmit">
+  <view class="form-title"><text class="red">*</text>您的姓名：</view>
+  <input type='text' placeholder='请输入您的姓名' name="user_name" value="{{user_name}}" bindinput="inName"/>
+
+  <view class="form-title"><text class="red">*</text>您的手机号：</view>
+  <input type='digit' maxlength='11' placeholder='请输入您的手机号' name="mobile" value="{{mobile}}" bindinput="inMobile"/>
+
+  <view class="form-title">装修方式</view>
+  <view class="line">
+    <radio-group bindchange="radioChange" name="zx_type" value="{{zx_type}}" bindchange="inType">
+      <label><radio name="type" value="半包"></radio>半包</label>
+      <label><radio name="type" value="全包"></radio>全包</label>
+    </radio-group>
+  </view>
+  <view class="form-title">装修风格</view>
+  <view class="line">
+    <checkbox-group name="zx_mode" value="{{zx_mode}}" bindchange="inMode">
+      <label><checkbox value="现代简约"></checkbox>现代简约</label>
+      <label><checkbox value="欧式"></checkbox>欧式</label>
+      <label><checkbox value="地中海风格"></checkbox>地中海风格</label>
+      <label><checkbox value="其他"></checkbox>其他</label>
+    </checkbox-group>
+  </view>
+  <button formType="submit">提交</button>
+</form>

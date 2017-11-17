@@ -1,0 +1,38 @@
+.f-right{
+  width: 70%;
+  float: left;
+}
+form input{
+  background-color: #fff;
+  padding: 0;
+  float: right;
+  width: 90%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: right;
+}
+form picker{
+  text-align: right;
+  width: 90%;
+}
+.f-line{
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eee;
+  padding-right:30rpx;
+}
+.f-title{
+  width: 25%;
+  float: left;
+  padding-left: 5%;
+  color: #999;
+}
+form button{
+  margin-top: 40rpx;
+  width: 92%;
+  background-color: #ee8722;
+  color: #fff;
+}

@@ -1,0 +1,19 @@
+/* sales.wxss */
+.top-img{
+  width: 100%;
+  height:400rpx;
+}
+.detail{
+  padding: 0 30rpx;
+}
+.title{
+  font-size:34rpx;
+  margin:20rpx 0;
+}
+.detail image{
+  width: 100%;
+  display:block;
+}
+.cont-top{
+  margin-top: 40rpx;
+}

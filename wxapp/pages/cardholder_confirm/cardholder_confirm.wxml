@@ -1,0 +1,54 @@
+
+<view class="title ">附属卡申请人信息确认:</view>
+<view class="info">
+
+    <view class="row">
+        <text>姓名</text>
+        <text>手机号</text>
+        <text>证件号</text>
+    </view>
+    <view class="row">
+        <text>{{attachName}}</text>
+        <text>{{attachMobile}}</text>
+        <text>{{attachCertNo}}</text>
+    </view>
+
+
+</view>
+
+
+<!--<view class="info border ">
+    <view class="row">
+        <text>姓名</text>
+        <text>{{name}}</text>
+    </view>
+    <view class="row">
+        <text>手机号</text>
+        <text>{{mobile}}</text>
+    </view>
+    <view class="row">
+        <text>卡号</text>
+        <text>{{cardNo}}</text>
+    </view>
+</view>-->
+
+
+<view class="agree">
+    <view class="agree_uncheck {{checked?'agree_check':''}}" bindtap="agreeCheck" value='0'></view>
+    <view class="agree_text font_26 color_66">
+        本人同意协议本人同意协议本人同意协议本人同意协议本人同意协议本人同意协议<view class="agree_rule">《xxxx协议协议》</view>
+        本人同意协议本人同意协议<view class="agree_rule">《xxxx协议协议》</view>
+        本人同意协议本人同意协议本人同意协议本人同意协议本人同意协议
+    </view>
+</view>
+
+<view class="button">
+     <button  class="" form-type="submit" bindtap="holderAttachSubmit" disabled="{{submitdisabled}}">确认以上信息</button>
+</view>
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<view class="p-title" bindtap="toVIP">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">项目展示</view>
+</view>
+<view class="product">
+  <view class="product-list">
+  <block wx:for="{{projectList}}" wx:key="unique">
+    <view class="product-item" bindtap="navigate" data-val="{{item.id}}">
+      <image src="{{imgUrl}}{{item.logo}}" mode="scaleToFill"></image>
+      <text class="overflow product-titlt">{{item.title}}</text>
+    </view>
+  </block>
+  </view>
+</view>

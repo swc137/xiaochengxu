@@ -1,0 +1,24 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{contentList}}"  wx:key="unique">
+  <view class="product-list">
+  <text class="pro-title">{{item.name}}</text>
+  <view class="list">
+    <block wx:for="{{item.product_list}}"  wx:key="unique">
+      <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+        <view class="product-name more-overflow">{{item.info.title.value}}</view>
+        <view class="color-f2">¥{{item.info.price.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="loading" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="toCateGory">查看更多></view>
+</block>
+

@@ -1,0 +1,25 @@
+
+.top-img{
+  width: 100%;
+  height:400rpx;
+  display:block;
+  /*position:absolute;
+  left:0;
+  right:0;
+  margin:auto;*/
+}
+.detail{
+  padding: 20rpx 30rpx;
+}
+.title{
+  font-size:32rpx;
+  font-weight: 800;
+  text-align: center;
+}
+.content{
+  margin: 30rpx 0;
+}
+.detail image{
+  width: 100%;
+  display:block;
+}

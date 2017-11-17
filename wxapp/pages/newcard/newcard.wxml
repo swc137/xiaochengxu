@@ -1,0 +1,21 @@
+<view class="container1">
+<view class="banner border"></view>
+<form bindsubmit="bindFormSubmit" >
+<view class="row border">
+    <text>手机号码</text>
+    <input type="text"  maxlength="11" name="mobileNo" value="{{mobileNo}}"placeholder="请输入" bindinput="mobileNoInput" />
+</view>
+<view class="row border">
+    <text>获取验证码</text>    
+    <input class="input_verify" type="tel" maxlength="6" name="verifyCode" value="{{verifyCode}}" placeholder="请输入" bindinput="verifyCodeInput" />
+    <view class="btn_verify border-l {{sendCodeState ?'disable':''}}" bindtap="getVerifyCode">{{dycodeInfo}}</view>
+</view>
+<view class="button">
+     <button form-type="submit" disabled="{{submitdisabled}}">确认以上信息</button>
+</view>
+</form>
+<import src="../../components/bubble.wxml" />
+<template is="tempBubble" data="{{bubMsg:promptText,bubIsHide,animationData}}" ></template>
+</view>
+
+

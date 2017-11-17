@@ -1,0 +1,3 @@
+<view class="act-bg">
+  <view class="btn-area" bindtap='toResult'></view>
+</view>

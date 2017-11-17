@@ -1,0 +1,13 @@
+<view class="re-product">
+  <view class="t-name">课程列表</view>
+  <view class="product-list" wx:if="{{products.length > 0}}">
+    <block wx:for="{{products}}" wx:key="unique">
+      <view class="product-item" data-id="{{item.id}}" bindtap="toDetail">
+        <image src="{{imgUrl}}{{item.logo}}"></image>
+        <text>{{item.title}}</text>
+        <text class="price">¥{{item.price}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="no-data">暂无搜索结果</view>
+</view>

@@ -1,0 +1,62 @@
+<view class="container1">
+<view class="banner border" ></view>
+<form bindsubmit="bindMainCardFormSubmit" >
+<view class="row border">
+    <text class="">主卡人姓名</text>
+    <input type="text" name="mainCardName" maxlength="30" placeholder="主卡人姓名" value="{{mainCardName}}" bindblur="getAttachPinYin" bindinput="mainCardNameInput"/>
+</view>
+<view class="row border">
+    <text>主卡人卡号</text>
+    <input type="text"  maxlength="16" name="mainCardNo" value="{{mainCardNo}}"placeholder="主卡人卡号" bindinput="mainCardNoInput" />
+</view>
+<view class="section row border">
+    <text class="section_title">证件类型</text>
+    <picker bindchange="bindCertType"  mode="selector" value="{{certTypeindex}}" range="{{certTypeList}}">
+        <text>{{certTypeList[certTypeindex]}}</text>
+    </picker>
+</view>
+<block wx:if="{{certTypeIsPSPT}}"> 
+<view class="row border">
+    <text class="section_title">国籍</text>
+    <picker bindchange="bindCountrySelect" mode="selector"  value="{{countrysindex}}" range="{{countryList}}">
+    <text>{{countryList[countrysindex]}}</text>
+    </picker>
+</view>
+</block>
+<view class="row border">
+    <text>主卡人证件号码</text>
+    <input type="text"  maxlength="20" name="mainCardCertNo" value="{{mainCardCertNo}}"placeholder="主卡人证件号码" bindinput="mainCardCertNoInput" />
+</view>
+<view class="row border">
+    <text>验证码</text>    
+    <input class="input_verify" type="digit" maxlength="6" name="verifyCode" value="{{verifyCode}}" placeholder="请输入"/>
+    <view class="btn_verify border-l {{sendCodeState ?'disable':''}}" bindtap="getVerifyCode">{{dycodeInfo}}</view>
+</view>
+<block wx:if="{{isShowCertDate}}">
+<view class="row border">
+    <text>证件开始时间:</text>
+    <picker mode="date" value="{{mainCardCertBeginDate}}" start="{{bStartDate}}" end="{{bEndDate}}" bindchange="datePickerBeginChange">
+        {{mainCardCertBeginDate}}
+    </picker>
+</view>
+<view class="row border">
+      <text>证件是否长期有效</text>
+      <switch type="switch" bindchange="isEnternalSwitch" />
+</view> 
+<block wx:if="{{certEnternal}}">
+    <view class="row border">
+        <text>证件截止时间:</text>
+        <picker mode="date" value="{{mainCardCertEndDate}}" start="{{eStartDate}}" end="{{eEndDate}}" bindchange="datePickerEndChange">
+            {{mainCardCertEndDate}}
+        </picker>
+    </view>
+</block>
+</block>
+<view class="button">
+     <button form-type="submit" disabled="{{submitdisabled}}">确认以上信息</button>
+</view>
+<view class="nocard" bindtap="toNoMainCard">没有交行卡？请点击这里！</view>
+</form>
+<import src="../../components/bubble.wxml" />
+<template is="tempBubble" data="{{bubMsg:promptText,bubIsHide,animationData}}" ></template>
+</view>

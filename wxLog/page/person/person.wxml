@@ -1,0 +1,21 @@
+<view class="bg-personal">
+  <image src="{{userInfo.avatarUrl}}" class="icon-head"></image>
+  <view class="bg-name">{{userInfo.nickName}}</view>
+</view>
+<view class="contact-us">联系我们 Contact us</view>
+<view class="nav-list">
+  <view class="v-line border-b" bindtap='toMap'>
+    <view>公司名称：{{companyName}}</view>
+  </view>
+  <view class="v-line border-b" bindtap='toMap'>
+    <view>公司地址：{{address}}</view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+    <view>服务电话：{{phone}}</view>
+    <view class="right-arrow"></view>
+  </view>
+</view>
+<view class="company-about">
+  {{companyDesc}}
+</view>

@@ -1,0 +1,10 @@
+<image class="top-img {{topImgHidden}}" src="{{imgUrl}}{{info.logo}}"></image>
+<view class="detail">
+  <view class="title">{{info.title}}</view>
+  <block wx:for="{{content}}" wx:key="unique">
+    <view class="content">{{item}}</view>
+  </block>
+  <block wx:for="{{images}}" wx:key="unique">
+    <image src="{{imgUrl}}{{item}}" bindload="imgLoad" data-val="{{index}}" bindtap="bigImg" data-index="{{index}}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+  </block>
+</view>

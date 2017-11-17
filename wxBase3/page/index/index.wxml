@@ -1,0 +1,39 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="menu">
+  <block wx:for="{{menuList}}" wx:key="unqiue">
+    <view class="menu-item" bindtap="getInfo" data-id="{{item.link}}" data-val="{{item.name}}">
+      <image src="{{imgUrl}}{{item.logo}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>
+<view class="p-title">特别推荐</view>
+<view class="accessory">
+  <block wx:for="{{bannerList}}" wx:key="unique">
+    <image class="index{{index+1}}" src="{{imgUrl}}{{item.logo}}" data-val="{{item.link}}" bindtap="navigate"></image>
+  </block>
+</view>
+
+<view class="p-title">我们的产品<text class="more" bindtap='toProductList'>更多</text></view>
+<view class="product">
+  <view class="product-list">
+    <block wx:for="{{productList}}" wx:key="unique">
+      <view class="product-item" bindtap="navigate" data-val="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="scaleToFill"></image>
+        <view class="overflow">{{item.info.title.value}}</view>
+        <view style='color:#ff6600'>¥{{item.info.price.value}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

@@ -1,0 +1,31 @@
+/* product.wxss */
+.product{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.product .title{
+  border-left:6rpx solid #2072cf;
+  padding-left:10rpx;
+}
+.product-list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.product-item{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.product-item image{
+  height:260rpx;
+  width:260rpx;
+  background-color:#efefef;
+  box-shadow:4rpx 12rpx 16rpx #bbb;
+  float:left;
+}
+.product-item .product-titlt{
+  float: left;
+  width: 55%;
+  padding-left: 30rpx;
+}

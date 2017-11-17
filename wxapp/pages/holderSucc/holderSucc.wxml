@@ -1,0 +1,22 @@
+<!--pages/resultSucc/resultSucc.wxml-->
+<view class="wrapper">
+    <view class="content border-t border">
+        <view class="title_box font_36">
+            <text class="title">{{succTit}}</text>
+        </view>
+        <view class="result">
+            <image class="icon-image" src="../images/success.png"></image>
+        </view>
+        <view class="desc_box font_26 color_99">
+            <view class="desc">您的申请已经成功在线递交，我们将尽快审核。</view>
+            <view class="desc">为确保办卡安全，交通银行太平洋信用卡中心可能会通过电话与您核实资料，请注意接听并配合。</view>
+            <view class="desc">您可在递交申请的次日登录交通银行信用卡网站首页，点击“办卡进度查询”按钮或编辑短信“CC进度查询#证件号码”发送至95559查询您的信用卡批核进度。如您的卡片被批核，将通过快递免费邮寄到您主卡的邮寄地址。</view>
+        </view>
+    </view>
+    <view class="btn_white border font_30 color_cf">
+        <text></text>
+    </view>
+</view>
+
+
+

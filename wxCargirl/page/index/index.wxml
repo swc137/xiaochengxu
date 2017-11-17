@@ -1,0 +1,49 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" bindtap='toActivity'>
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="index-content">
+  <view class="product-list" hidden="{{menuActive[0]?'':'hidden'}}">
+    <block wx:for="{{productList}}"  wx:key="unique">
+      <view wx:if="{{index % 2 ==0}}"> 
+        <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+          <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+          <view class="fr item-content">
+            <view class="overflow">{{item.info.title.value}}</view>
+            <view class="overflow i-model">{{item.info.beizhu.value}}</view>
+            <view class="i-font">首付：<text>{{item.info.shoufu.value}}</text>元</view>
+            <view class="i-font">月供：<text>{{item.info.yuegong.value}}</text>元</view>
+          </view> 
+        </view>
+      </view>
+      <view wx:else>
+        <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+          <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fr"></image>
+          <view class="fr item-content">
+            <view class="overflow">{{item.info.title.value}}</view>
+            <view class="overflow i-model">{{item.info.beizhu.value}}</view>
+            <view class="i-font">首付：<text>{{item.info.shoufu.value}}</text>元</view>
+            <view class="i-font">月供：<text>{{item.info.yuegong.value}}</text>元</view>
+          </view> 
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="more-car">
+  <text>更多车型，点击购车意向</text>
+  <view class="more-line"></view>
+</view>
+
+<view class="i-bottom wechat">
+  <image src='../../image/public/i-wechat.png'></image>
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>
+<view class="i-bottom" data-val="{{phone}}" bindtap="callPhone">
+  <image src='../../image/public/i-mob.png'></image>
+</view>

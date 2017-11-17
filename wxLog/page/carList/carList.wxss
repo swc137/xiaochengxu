@@ -1,0 +1,7 @@
+.car-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}

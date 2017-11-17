@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/form/form",
+    "page/about/about",
+    "page/detail/detail",
+    "page/product/product",
+    "page/person/person",
+    "page/nav/nav",
+    "page/designDetail/designDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "圣豪洲高端设计装饰",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#2072cf",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/public/index.png",
+        "selectedIconPath": "image/public/index-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/form/form",
+        "iconPath": "image/public/classify.png",
+        "selectedIconPath": "image/public/classify-a.png",
+        "text": "免费量房"
+      },
+      {
+        "pagePath": "page/about/about",
+        "iconPath": "image/public/personal.png",
+        "selectedIconPath": "image/public/personal-a.png",
+        "text": "联系我们"
+      }
+    ]
+  },
+  "debug": false
+}

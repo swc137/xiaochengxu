@@ -1,0 +1,53 @@
+<form bindsubmit="formSubmit">
+  <view class="f-line">
+    <text class="f-title">姓名</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入您的姓名' name="name" value="{{user_name}}" bindinput="inName"/>
+    </view>
+  </view>
+  <!-- <view class="f-line">
+    <text class="f-title">年龄</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入您的年龄' name="user_name" value="{{user_name}}" bindinput="inName"/>
+    </view>
+  </view> -->
+  <view class="f-line">
+    <text class="f-title">手机号码</text>
+    <view class="f-right">
+      <input type='digit' maxlength='11' placeholder='请输入您的手机号' name="mobile" value="{{mobile}}" bindinput="inMobile"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">意向车型</text>
+    <view class="f-right">
+      <input type='text' maxlength='11' placeholder='请输入您的意向车型' name="chexing" value="{{chexing}}" bindinput="inChe"/>
+      <!-- <picker bindchange="bindCarChange" value="{{productList[carIndex]}}" range="{{productList}}" name="chexing">
+        <view class="picker">
+          {{productList[carIndex].length > 0?productList[carIndex]:'请选择'}}
+        </view>
+      </picker> -->
+    </view>
+    <!-- <view class="right-arrow"></view> -->
+  </view>
+  <view class="f-line">
+    <text class="f-title">买车预算</text>
+    <view class="f-right">
+      <picker bindchange="bindYuChange" value="{{yusuan[index]}}" range="{{yusuan}}" name="yusuan">
+        <view class="picker">
+          {{yusuan[index].length > 0?yusuan[index]:'请选择'}}
+        </view>
+      </picker>
+    </view>
+    <view class="right-arrow"></view>
+  </view>
+
+  <button formType="submit">提交</button>
+</form>
+
+<view class="i-bottom wechat">
+  <image src='../../image/public/i-wechat.png'></image>
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>
+<view class="i-bottom" data-val="{{phone}}" bindtap="callPhone">
+  <image src='../../image/public/i-mob.png'></image>
+</view>

@@ -1,0 +1,4 @@
+<view class="result-bg">
+  <view class="result-t">{{result_txt}}</view>
+</view>
+<button open-type="share" class="share-btn"></button>

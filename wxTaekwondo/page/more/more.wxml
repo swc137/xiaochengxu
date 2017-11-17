@@ -1,0 +1,16 @@
+<image class="top-img" src="../../image/hot-news.jpg"></image>
+<view class="menu">
+  <text class="active" data-val="about_us">关于我们</text>
+</view>
+<view>
+  <map bindtap="openLocation" class="map" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" markers="{{markers}}" scale="14"></map>
+  <view class="detail">
+    <view class="title">{{info.title}}</view>
+    <block wx:for="{{content}}" wx:key="unique">
+      <view class="content">{{item}}</view>
+    </block>
+    <block wx:for="{{images}}" wx:key="unique">
+      <image src="{{imgUrl}}{{item}}" mode="scaleToFill" bindload="imgLoad"  data-val="{{index}}" data-index="{{ index }}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+    </block>
+  </view>
+</view>

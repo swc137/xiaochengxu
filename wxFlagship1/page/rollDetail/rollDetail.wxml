@@ -1,0 +1,25 @@
+<view class="roll-list">
+  <view class="roll-item">
+    <view class="item-left">
+      <view>¥<text class="roll-num">30</text></view>
+      <view>满5999元可用</view>
+    </view>
+    <view class="item-right">
+      <view class="roll-title overflow">优惠券标题优惠券标题优惠券标题优惠券标题优惠券标题优惠券标题</view>
+      <view class="roll-time">
+        <text>全场商品通用</text>
+        <text class="roll-date">2017.10.23-2017-12.30</text>
+      </view>
+    </view>
+  </view>
+  <view>优惠券规则:</view>
+  <view class="g-content">
+    <view>满68元使用</view>
+    <view>有效期：2017.07.17-2017.10.14</view>
+    <view>该券不与其他优惠同享</view>
+  </view>
+  <button class="has-roll">领取优惠券</button>
+
+</view>
+
+

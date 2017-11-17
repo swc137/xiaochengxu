@@ -1,0 +1,18 @@
+<image src='../../image/hot-news.jpg' class='detail-img' mode='widthFix'></image>
+<view class='d-info'>
+  <text>{{storeDetail.title}}</text>
+  <view class="address">{{storeDetail.address}}</view>
+</view>
+<view class="call" bindtap='onCall'>一键拨号:{{storeDetail.mobile}}</view>
+ <view class="d-detail">
+  <view class="d-title">公司简介</view>
+  <view class="d-content">
+    <block wx:for="{{content}}" wx:key="unique">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <block wx:for="{{storeDetail.images}}" wx:key="unique">
+    <image src='{{imgUrl}}{{item}}' class='detail-img' mode='widthFix'></image>
+  </block>
+  
+</view> 

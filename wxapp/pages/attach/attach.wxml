@@ -1,0 +1,119 @@
+<view class="container1">
+
+<form bindsubmit="bindAttachFormSubmit">
+<view class="row border ">
+    <text class="row_l">姓名</text>
+    <view class="row_r">
+    <input type="text" name="attachName" maxlength="30" placeholder="中文姓名" value="{{attachName}}" bindblur="getAttachPinYin" bindinput="attachNameInput"/>
+    </view>
+</view>
+<view class="row border">    
+    <text class="row_l">姓名拼音</text>
+    <view class="row_r">
+    <input type="text" name="attachChName" value="{{attachChName}}" placeholder="拼音/英文姓名" bindinput="attachChNameInput"/>
+    </view>
+</view>
+<view class="section row border">
+    <text class="row_l section_title">证件类型</text>
+    <picker bindchange="bindCertType"  mode="selector" value="{{certTypeindex}}" range="{{certTypeList}}">
+        <text>{{certTypeList[certTypeindex]}}</text>
+    </picker>
+</view>
+<block wx:if="{{certTypeIsPSPT}}">
+<view class="row border">
+    <text class="row_l section_title">国籍</text>
+    <picker bindchange="bindCountrySelect" mode="selector"  value="{{countrysindex}}" range="{{countryList}}">
+    <text>{{countryList[countrysindex]}}</text>
+    </picker>
+</view>
+</block>
+<view class="row border">
+    <text class="row_l">证件号</text>
+    <view class="row_r">
+    <input type="text"  maxlength="20" name="attachCertNo" value="{{attachCertNo}}"placeholder="请输入" bindinput="attachCertNoInput" />
+    </view>
+</view>
+<view class="row border">
+    <text class="row_l">证件开始时间</text>
+    <picker mode="date" value="{{attachCertBeginDate}}" start="{{bStartDate}}" end="{{bEndDate}}" bindchange="datePickerBeginChange">
+        {{attachCertBeginDate}}
+    </picker>
+</view>
+<view class="row border">
+      <text class="row_l">证件是否长期有效</text>
+      <switch type="switch" bindchange="isEnternalSwitch" />
+</view> 
+<block wx:if="{{certEnternal}}">
+    <view class="row border">
+        <text class="row_l">证件截止时间</text>
+        <picker mode="date" value="{{attachCertEndDate}}" start="{{eStartDate}}" end="{{eEndDate}}" bindchange="datePickerEndChange">
+            {{attachCertEndDate}}
+        </picker>
+    </view>
+</block>
+
+<view class="row border">
+    <block wx:if="{{isNotSSNO}}">
+        <text class="row_l">出生日期</text>
+        <view class="row_r">
+        <input type="digit" value="{{attachBirthDay}}" maxlength="8" placeholder="出生日期(如19900918)" name="attachBirthday"/>
+        </view>
+    </block>
+    <block wx:else>
+        <text class="row_l">出生日期</text>
+        <text class="fr">{{certBirthDay}}</text>
+    </block>
+</view>
+
+<view class="row border">
+    <text class="row_l">手机号</text>
+    <view class="row_r">
+    <input type="digit" maxlength="11" name="attachTel" bindinput="attachTelInput" value="{{attachTel}}" placeholder="请输入"/>
+    </view>
+</view>
+
+<view class="row border border">
+    <text class="row_l">验证码</text>   
+    <view class="row_code"> 
+    <input class="input_verify" type="digit" maxlength="6" name="verifyCode" value="{{verifyCode}}" placeholder="请输入验证码"/>
+    </view>
+    <view class="btn_verify border-l  {{sendCodeState ?'btn_verify_disable':''}}" bindtap="getVerifyCode">{{dycodeInfo}}</view>
+</view>
+<view class="row border">
+    <block wx:if="{{isNotSSNO}}">
+        <text class="row_l section_title">性别</text>
+        <picker bindchange="bindAttachSex"  mode="selector"  value="{{attachSexindex}}" range="{{attachSexList}}">
+            {{attachSexList[attachSexindex]}}
+        </picker>
+    </block>
+    <block wx:else>
+        <text class="row_l section_title">性别</text>
+        <text>{{certSex}}</text>
+    </block>
+</view>
+
+<view class="row border">
+    <text class="row_l section_title">与主卡人关系</text>
+    <picker bindchange="bindAttachRelation" mode="selector"  value="{{attachRelationindex}}" range="{{attachRelationList}}">
+        {{attachRelationList[attachRelationindex]}}
+    </picker>
+</view>
+<view class="row border">
+    <text class="row_l section_title">交易密码选择</text>
+    <picker bindchange="bindAttachPOSCheck" mode="selector"  value="{{attachPosCheckindex}}" range="{{attachPosCheckList}}">
+    <text>{{attachPosCheckList[attachPosCheckindex]}}</text>
+    </picker>
+</view>
+
+<view class="button">
+     <button hover-class="btn-hover" form-type="submit"  disabled="{{submitdisabled}}">下一步</button>
+</view>
+</form>
+<!--<modal hidden="{{errorMsg}}" no-cancel bindconfirm="errormsgconfirm" >
+<view class="">{{promptText}}</view>
+</modal>-->
+<!--黑色闪框-->
+<import src="../../components/bubble.wxml"/>
+<template is="tempBubble" data="{{bubMsg:promptText,bubIsHide,animationData}}" ></template>
+
+</view>

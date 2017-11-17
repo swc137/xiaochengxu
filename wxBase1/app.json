@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/about/about",
+    "page/product/product",
+    "page/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "基础版",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": false
+}

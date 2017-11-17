@@ -1,0 +1,70 @@
+<form bindsubmit="formSubmit">
+  <input name="meeting_id" value="{{meeting_id}}" hidden/>
+  <input name="member_id" value="{{member_id}}" hidden/>
+  <view class="f-line">
+    <text class="f-title">姓名<text class="color-o">*</text></text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入姓名' data-id="username" name="member[username]" value="{{username}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <input name="member[sex]" value="{{sexIndex/1+1}}" hidden/>
+    <text class="f-title">性别<text class="color-o">*</text></text>
+    <view class="f-right">
+      <picker bindchange="bindSex" value="{{sex[sexIndex]}}" range="{{sex}}">
+        <view class="picker">
+          {{sex[sexIndex].length > 0?sex[sexIndex]:'请选择性别'}}
+        </view>
+      </picker>
+    </view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">职务</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入职务' data-id="job" name="member[job]" value="{{job}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">座机</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入座机号码' data-id="phone" name="member[phone]" value="{{phone}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">手机号码<text class="color-o">*</text></text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入手机号码' data-id="mobile" name="member[mobile]" value="{{mobile}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">微信号</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入微信号' data-id="wx_number" name="member[wx_number]" value="{{wx_number}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <input name="member[zhusu]" value="{{zhusuIndex/1+1}}" hidden/>
+    <text class="f-title">住宿<text class="color-o">*</text></text>
+    <view class="f-right">
+      <picker bindchange="bindZhusu" value="{{zhusu[zhusuIndex]}}" range="{{zhusu}}">
+        <view class="picker">
+          {{zhusu[zhusuIndex].length > 0?zhusu[zhusuIndex]:'请选择住宿方式'}}
+        </view>
+      </picker>
+    </view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="top-menu">
+    <view class="menu-item active">会议部分内容选择</view>
+  </view>
+  <block wx:for="{{meet_theme}}" wx:key="unquie">
+    <view class="meet-item {{select == item.id?'active':''}}" data-val="{{item.id}}" bindtap='changeMeet'>
+      {{item.title}}
+      <image src='../../image/public/icon-select.png'></image>
+    </view>
+  </block> 
+  <input name='member[conference_theme_id]' value="{{select}}" hidden/>
+
+  <button formType="submit">提交</button>
+</form>

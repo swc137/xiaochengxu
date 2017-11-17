@@ -1,0 +1,11 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<image src='{{imgUrl}}{{detailInfo.logo_img.value}}' style="width:100%;height:400rpx;"></image>
+<view class="title">{{detailInfo.title.value}}</view>
+<view class="detail-title">
+  <text>商品详情</text>
+</view>
+<view class="detail">
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>

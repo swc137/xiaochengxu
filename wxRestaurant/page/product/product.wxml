@@ -1,0 +1,17 @@
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{categoryArr}}" data-val="{{pickerId[index]}}" class="prodcut-picker">
+  <view class="picker">
+    <text>{{categoryArr[index]}}</text>
+  </view>
+  <image src="../../image/public/icon-down.png" class="icon-down"></image>
+</picker>
+<view class="product">
+  <view class="product-list">
+    <block wx:for="{{productList}}" wx:key="unique">
+      <view class="product-item" bindtap="navigate" data-val="{{item.id}}">
+        <image src="{{imgUrl}}{{item.logo}}" mode="scaleToFill"></image>
+        <view class="overflow">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <image class="noData {{noData}}" src="../../image/public/noData.png"></image>
+</view>

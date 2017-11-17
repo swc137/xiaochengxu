@@ -1,0 +1,14 @@
+.top-bg{
+  background: #f0feff;
+  text-align: center;
+  height: 100%;
+}
+.top-bg .bg{
+  width: 100%;
+}
+button{
+  margin: 100rpx 5%;
+  width: 90%;
+  background-color: #2072cf;
+  color: #fff;
+}

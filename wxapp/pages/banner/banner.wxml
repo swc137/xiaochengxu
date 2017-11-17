@@ -1,0 +1,13 @@
+<view class="wrapper">
+    <view class="banner">
+        <image src="../images/big_banner.jpg"></image>
+    </view>
+
+    <view class="content">
+        <view class="cont-tilte">准备好找TA撒娇了吗？只需准备好</view>
+        <view class="carded">身份证</view>
+        <view class="button">
+            <button bindtap="apply">开始吧</button>
+        </view>
+    </view>
+</view>

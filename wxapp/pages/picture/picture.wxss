@@ -1,0 +1,100 @@
+/* pages/picture/picture.wxss */
+.img{
+    width: 520rpx;
+    height: 390rpx;
+    margin: 0 auto;
+    border: 2rpx solid #cfcfcf;
+    background: url('http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/card_front.jpg') no-repeat center center;
+    background-size: 100%;
+    background-color: #fff;
+}
+image{
+    width: 100%;
+    height: 100%;
+}
+.remind{
+    padding: 40rpx 30rpx 10rpx;
+    line-height: 1.5;
+}
+.remind_tit{
+    font-size: 28rpx;
+    padding-bottom: 10rpx;
+}
+.remind_desc{
+    font-size: 26rpx;
+    padding-bottom: 20rpx;
+}
+
+.card_title{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30rpx;
+}
+.front,.back{
+    padding-top: 40rpx;
+    position: relative;
+}
+.help{
+    text-align: center;
+    padding-bottom: 30rpx;
+}
+/*底部浮层*/
+.bpop{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-color: #fff;
+}
+.bpop_tit{
+    position: relative;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+}
+.bpop_cancle{
+    position: absolute;
+    left: 30rpx;
+}
+.bpop_content{
+    padding: 20rpx 30rpx;
+    text-align: justify;
+}
+/*查看证件范例*/
+.epop{
+    width: 550rpx;
+    height: 674rpx;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20rpx;
+}
+.epop image{
+    display: block;
+    width: 325rpx;
+    height: 472rpx;
+    margin: 60rpx auto 40rpx;
+    border-radius: 20rpx;
+}
+.btn_sure{
+    text-align: center;
+    line-height: 100rpx;
+    color: #2072cf;
+}
+.pic_example{
+    position: absolute;
+    right: 30rpx;
+    top: -10rpx;
+    text-align: right;
+    font-size: 26rpx;
+    font-weight: 100;
+    color: #2072cf;
+    background: url('http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/moreinfo.png') no-repeat left center;
+    background-size: 30rpx;
+    padding-left: 36rpx;
+}

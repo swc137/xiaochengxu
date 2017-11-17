@@ -1,0 +1,69 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="menu">
+   <view class="menu-item" bindtap="toAct">
+    <image src="../../image/public/nav1.png"></image>
+    <text>公司简介</text>
+  </view>
+  <view class="menu-item" bindtap='moreCase' data-id="136" data-name="公司案列">
+    <image src="../../image/public/nav2.png"></image>
+    <text>公司案例</text>
+  </view>
+  <view class="menu-item" bindtap='morePerson' data-id="137" data-name="设计师">
+    <image src="../../image/public/nav3.png"></image>
+    <text>设计师</text>
+  </view>
+  <view class="menu-item" bindtap="toContact">
+    <image src="../../image/public/nav4.png"></image>
+    <text>联系我们</text>
+  </view>
+</view>
+<view class="notice">
+  <image src="../../image/public/notice.png"></image>
+  <view class="notice-text overflow">盐城圣豪洲装修小程序上线啦！</view>
+</view>
+
+<view class="p-title">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">公司案例</view>
+  <view class="more" bindtap='moreCase' data-id="136" data-name="公司案列">MORE</view>
+</view>
+<view class="product">
+  <view class="product-list">
+  <block wx:for="{{productList}}" wx:key="unique">
+    <view class="product-item" bindtap="navigate" data-val="{{item.id}}">
+      <image src="{{imgUrl}}{{item.logo}}" mode="scaleToFill"></image>
+      <view class="overflow">{{item.title}}</view>
+    </view>
+  </block>
+  </view>
+</view>
+
+<view class="p-title">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">设计师</view>
+  <view class="more" bindtap='morePerson' data-id="137" data-name="设计师">MORE</view>
+</view>
+<view class="product">
+  <view class="person-list">
+  <block wx:for="{{personList}}" wx:key="unique">
+    <view class="person-item" bindtap="designerDetails" data-val="{{item.id}}">
+      <image src="{{imgUrl}}{{item.head_img}}" mode="scaleToFill"></image>
+      <view class="person-content">
+        <view class="overflow">设计师：{{item.designer_name}}</view>
+        <view class="overflow">设计作品：{{item.designer_name}}套</view>
+        <view class="overflow">理念：{{item.des}}</view>
+      </view>
+    </view>
+  </block>
+  </view>
+</view>
+
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

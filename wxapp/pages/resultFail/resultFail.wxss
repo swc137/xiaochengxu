@@ -1,0 +1,31 @@
+/* pages/resultFail/resultFail.wxss */
+.content{
+    padding:0 30rpx;
+}
+.title_box{
+    height: 150rpx;
+    text-align: center;
+}
+.title{
+    padding-left:56rpx;
+    line-height: 150rpx;
+    color:#222;
+    background: url("http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/fail.png") no-repeat left center;
+    background-size:38rpx 38rpx;
+}
+.desc_box{
+    padding: 80rpx;
+    text-align:center;
+}
+.btn_white{
+    height: 110rpx;
+    line-height: 110rpx;
+    text-align: center;
+}
+.result{
+    text-align: center;
+}
+.icon-image{
+    width: 443rpx;
+    height: 323rpx;
+}

@@ -1,0 +1,56 @@
+<view class="top-address">
+  <image src='../../image/public/icon-address.png'></image>
+  <view class="address-detail">
+    <view class="detail-top">
+      <text><text class="color-9">收件人：</text>{{orderDetail.username}}</text>
+      <text class="fr">{{orderDetail.mobile}}</text>
+    </view>
+    <view>
+      <text class="color-9">收件地址：</text>{{orderDetail.province}}{{orderDetail.city}}{{orderDetail.area}}{{orderDetail.address}}
+    </view>
+  </view>
+</view>
+<view class="order-detail">
+  <block wx:for="{{orderDetail.orderProducts}}" wx:key="unique">
+    <view class="order-product">
+      <image src='{{imgUrl}}{{item.logo}}' class="fl"></image>
+      <view class="product-detail">
+        <view class="product-name more-overflow">{{item.title}}</view>
+        <view class="product-price">
+          ¥{{item.price}}
+          <text class="fr product-num">x{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="order-line border-b">
+    <text class="color-9">商品总价</text>
+    <text class="fr">¥{{orderDetail.total_price}}</text>
+  </view>
+  <view class="order-line border-b">
+    <text class="color-9">运费(快递)</text>
+    <text class="fr">¥0.00</text>
+  </view>
+  <view class="order-line mar-b">
+    <text class="color-9">实付款</text>
+    <text class="fr">¥{{orderDetail.total_price}}</text>
+  </view>
+
+  <view class="order-line border-b">
+    <text class="color-9">订单编号</text>
+    <text class="fr">{{orderDetail.order_no}}</text>
+  </view>
+  <view class="order-line border-b">
+    <text class="color-9">创建时间</text>
+    <text class="fr">{{time}}</text>
+  </view>
+</view>
+
+<view class="btn-area">
+  <view class="btn-right">
+    <!-- <text class="btn-cancel">取消订单</text> -->
+    <text class="btn-pay">去支付</text>
+  </view>
+  
+</view>

@@ -1,0 +1,26 @@
+<view class="panic-top">
+  <view class="fl now">
+    <view>本期</view>
+    <view class="red">抢购中</view>
+  </view>
+  <view class="fl">
+    <view>下期</view>
+    <view class="color-9">即将开始</view>
+  </view>
+</view>
+<view class="setTime">距离结束还有<text>{{hours}}:{{minutes}}:{{seconds}}</text></view>
+
+<view class="product-list">
+  <!-- <block wx:for="{{productList}}"  wx:key="unique">
+  </block> -->
+  <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+      <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+      <view class="fr item-content">
+        <view class="more-overflow">皮革编制编织手拿包皮革编制编织手拿包皮革编制编织手拿包皮革编制编织手拿包</view>
+        <view class="old-price">¥3999元/件</view>
+        <view class="item-price">¥3999元/件</view>
+        <view class="btn-panic">去抢购</view>
+      </view> 
+    </view>
+  <view class="loading">查看更多></view>
+</view>

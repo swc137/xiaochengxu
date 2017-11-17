@@ -1,0 +1,19 @@
+<view class="bg-personal">
+  <image src="{{userInfo.avatarUrl}}" class="icon-head"></image>
+  <view class="bg-name">{{userInfo.nickName}}</view>
+</view>
+<view class="nav-list">
+  
+  <view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+    <view><image src='../../image/public/icon-online.png' class="v-icon"></image>客服热线<view class="fr">{{phone}}</view></view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="v-line border-b mar-b20" bindtap='toAddress'>
+    <view><image src='../../image/public/icon-address.png' class="v-icon"></image>地址导航</view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="v-line border-b" bindtap='toAbout'>
+    <view><image src='../../image/public/icon-about.png' class="v-icon"></image>关于我们</view>
+    <view class="right-arrow"></view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="company_about v-line" >
+  <view class="v-title">公司介绍 <view class="more" bindtap="toAbout">更多</view></view>
+  
+  <view class="about_text color-6">{{companyDesc}}</view>
+</view>
+
+<view class="product">
+  <view class="p-title">我们的产品<text class="more" bindtap='toProductList'>更多</text></view>
+  <view class="product-list2">
+    <view class="product-list">
+      <block wx:for="{{productList}}" wx:key="unique">
+        <view class="product-item" bindtap="navigate" data-val="{{item.md5_id}}">
+          <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="scaleToFill"></image>
+          <view class="item-title">{{item.info.title.value}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+  <view><image src='../../image/public/i-phone.png' class="v-icon"></image>{{phone}}</view>
+  <view class="right-arrow"></view>
+</view>
+<view class="v-line" bindtap='toMap'>
+  <view><image src='../../image/public/i-address.png' class="v-icon"></image>{{address}}</view>
+  <view class="right-arrow"></view>
+</view>

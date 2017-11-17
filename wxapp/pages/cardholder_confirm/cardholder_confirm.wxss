@@ -1,0 +1,65 @@
+
+.title{
+    padding: 40rpx 0 20rpx 30rpx;
+    font-size: 28rpx;
+    text-align: left;
+    color:#666;
+}
+.info{
+    margin: 0 30rpx;
+    padding: 30rpx 0;
+    background-color: #fff;
+}
+.row{
+    height: 50rpx;
+    line-height: 50rpx;
+    padding:0 30rpx 0;
+    font-size: 26rpx;
+}
+.row text{
+    float: left;
+    color:#222;
+    text-align: center;
+    width: 30%;
+    padding:0 1%;
+}
+.row text:first-child{
+    width: 18%;
+    padding: 0;
+}
+.row text:last-child{
+    width: 50%;
+    padding: 0;
+}
+/*同意协议*/
+.agree{
+    margin: 40rpx 30rpx 0;
+}
+.agree_uncheck{
+    float: left;
+    height: 28rpx;
+    width: 28rpx;
+    margin-right: 20rpx;
+    background: url('http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/sprite_radio.png') no-repeat center center;
+    background-size: 78rpx 28rpx;
+    background-position: 0 0;
+}
+.agree_check{
+    background-position: -50rpx 0;
+}
+.agree_text{
+    line-height: 1.4;
+    text-align: justify;
+}
+.agree_rule{
+    display: inline;
+    color: #2072cf;
+}
+
+
+.button view{
+    margin-top: 40rpx;
+}
+
+
+

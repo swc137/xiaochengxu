@@ -1,0 +1,52 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- <scroll-view scroll-x class="scroll">
+    <view class="scroll-view-item">
+      <image src="../../image/index/banner1.jpg"></image>
+      <view class="overflow">【五斤装】广西小台浓芒果新鲜采摘真的很甜</view>
+      <text class="red">¥25</text>
+    </view>
+  </scroll-view> -->
+
+<image src="../../image/index/img1.png" class="banner" mode="widthFix"></image>
+
+<view class="p-title">
+  <view class="p-text">动态资讯</view>
+</view>
+<view class="news">
+  <block wx:for="{{news}}" wx:key="unique">
+    <view class="news-item" data-val="{{item.id}}" bindtap="newsDetail">
+      <view class="overflow news-text">{{item.title}}</view>
+    </view>
+  </block>
+  <view class="news-more" bindtap="toNews"> - 查看更多 - </view>
+</view>
+
+<view class="p-title">
+  <view class="p-text">了解脉宝云</view>
+</view>
+<view class="video-area">
+  <video src="https://xiaochengxu.zhuniu.com/vedio/vedio_maiboyun.mp4" class="video"></video>
+</view>
+<image src="../../image/index/index.jpg" mode="widthFix" style="width:100%;margin-top:20rpx;"></image>
+<view class="p-title">
+  <view class="p-text">关于我们</view>
+</view>
+<view class="about-code">
+  <image src="../../image/index/code.png" mode="widthFix" ></image>
+  <view style="color:#ff0000">添加后凭此界面截图，免费获得培训精准引流试听课</view>
+</view>
+
+<view class="p-title">
+  <view class="p-text">联系我们</view>
+</view>
+<view class="contact-us">
+  <view>联系人：小蜜蜂</view>
+  <view>手  机：18252607917</view>
+  <view>邮  箱：2277340770@qq.com</view>
+</view>

@@ -1,0 +1,63 @@
+
+<view class="remind color_66">
+    <view class="remind_tit">温馨提示:</view>
+    <view class="remind_desc">1.请上传证件原件的照片，如我们在审核过程中发现您证件的照片不符合要求，可能需要您重新补件。建议您上传的图片大小在120K及4M之间，格式可为JPG、JPEG。</view>
+    <view class="remind_desc">2.港澳台人士请上传港澳台通行证，回乡证中含有您个人信息的内页照片；外籍人士请上传护照中含有您个人信息的内页照片。</view>
+</view>
+<view class="front">
+    <text class="pic_example" bindtap="showEpop">证件图片示例</text>
+    <view class="card_title font_30 color_22">申请人证件正面图片</view>
+    <view class="img">
+        <image src="{{tempFilePaths}}" bindtap="chooseFrontImg"  mode="aspectFit" />
+    </view>
+    <!--<view> {{applyuuid}}</view>-->
+</view>
+
+
+<block wx:if="{{isSSON}}">
+    <view class="back">
+        <view class="card_title font_30 color_22">申请人证件背面图片</view>
+        <view class="img">
+            <image src="{{tempFilePaths1}}" bindtap="chooseBackImg"  mode="aspectFill" />
+        </view>
+        <!--<view> {{applyuuid}}</view>-->
+    </view>
+</block>
+
+<view class="button">
+     <button bindtap="showPop" disabled="{{submitdisabled}}">下一步</button>
+</view>
+<!--<view class="help font_26 color_cf">上传遇到问题？</view>-->
+
+<loading hidden="{{imageLoad}}">正在上传</loading>
+
+<!--<modal hidden="{{showModal}}" no-cancel bindconfirm="hidePop" >
+    <view class="">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+</modal>-->
+
+<!--底部浮层-->
+<!--<view class="bpop_box" hidden="{{popIsHide}}">
+    <view class="overlay"></view>
+    <view class="bpop font_32">
+        <view class="bpop_tit border">
+            <text class="bpop_cancle font_30 color_cf" bindtap="hidePop">取消</text>
+            标题
+        </view>
+        <view class="bpop_content">
+            内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容,,,,内容内容内容
+        </view>
+    </view>
+</view>-->
+<!--查看证件范例-->
+<view class="epop_box" hidden="{{epopIsHide}}">
+<!--<view class="epop_box" >-->
+    <view class="overlay"></view>
+    <view class="epop">
+        <image src="https://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/photo_example.jpg"></image>
+        <view class="btn_sure border-t" bindtap="closeEpop">确定</view>
+    </view>
+</view>
+
+
+
+

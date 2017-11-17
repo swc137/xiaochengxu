@@ -1,0 +1,48 @@
+<view class="top-address" bindtap="toSelectAddress">
+   <image src='../../image/public/icon-address.png'></image>
+   <view wx:if="{{addressDetail}}">
+      <view class="address-detail">
+        <view class="detail-top">
+          <text><text class="color-9">收件人：</text>{{addressDetail.username}}</text>
+          <text class="fr">{{addressDetail.mobile}}</text>
+        </view>
+        <view>
+          <text class="color-9">收件地址：</text>{{addressDetail.province}}{{addressDetail.city}}{{addressDetail.area}}{{addressDetail.address}}
+        </view>
+      </view> 
+   </view>
+   <view wx:else>
+    <text class="color-9 choose">+请先选择收货地址</text>
+   </view>
+ 
+  <view class="right-arrow"></view>
+</view>
+
+<view class="order-detail">
+  <block wx:for="{{productList.info}}" wx:key="unquie">
+    <view class="order-product">
+      <image src='{{item.logo_img}}' class="fl"></image>
+      <view class="product-detail">
+        <view class="product-name more-overflow">{{item.title}}</view>
+        <view class="product-price">
+          ¥{{item.price}}
+          <text class="fr product-num">x{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="order-line border-b">
+    <text class="color-9">商品总价</text>
+    <text class="fr">¥{{productList.total}}</text>
+  </view>
+  <view class="order-line border-b">
+    <text class="color-9">运费(快递)</text>
+    <text class="fr">¥0.00</text>
+  </view>
+</view>
+
+<view class="btn-area">
+  <text>实付款：<text class="color-f2">¥{{productList.total}}</text></text>
+  <view class="btn-order" bindtap='toPay'>提交订单</view>
+</view>

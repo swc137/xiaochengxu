@@ -1,0 +1,56 @@
+<view class="contain">
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="search-area">
+    <!-- <image src="../../image/public/icon-position.png" class="icon-position"></image>
+    <text>苏州市</text> -->
+    <input type="text" placeholder="搜索课程" class="search" value="{{keyword}}" bindinput="bindKeyInput"/>
+    <image src="../../image/public/icon-search.png" class="icon-search" bindtap='toSearch'></image>
+  </view>
+</view>
+<view class="t-area">
+  <view class="t-name">推荐商家</view>
+  <scroll-view scroll-x style="height: 200rpx;width:100%;white-space:nowrap;" >
+     <block wx:for="{{storeInfo}}" wx:key="unique">
+      <view class="t-item" data-id="{{item.id}}" bindtap="storeDetail">
+          <image src="{{imgUrl}}{{item.logo}}"></image>
+          <view class="t-title">{{item.title}}</view>
+      </view>
+    </block> 
+  </scroll-view>
+</view>
+
+<view class="hot-news">
+  <view class="t-name">热门资讯</view>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{news}}" wx:key="unique">
+      <swiper-item data-id="{{item.id}}" bindtap="newsDetail">
+        <image src="{{imgUrl}}{{item.logo}}" class="swiper-img"></image>
+        <view class="hot-des">{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="re-product">
+  <view class="t-name">推荐课程</view>
+  <view class="product-list">
+    <block wx:for="{{products}}" wx:key="unique">
+      <view class="product-item" data-id="{{item.id}}" bindtap="toDetail">
+        <image src="{{imgUrl}}{{item.logo}}"></image>
+        <text>{{item.title}}</text>
+        <text class="price">¥{{item.price}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<!-- <view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view> -->

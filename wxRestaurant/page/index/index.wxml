@@ -1,0 +1,52 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="menu">
+   <view class="menu-item" bindtap="getInfo" data-id="1" data-val="牛蛙">
+    <image src="../../image/public/nav1.png"></image>
+    <text>牛蛙</text>
+  </view>
+  <view class="menu-item" bindtap="getInfo" data-id="30" data-val="拼锅">
+    <image src="../../image/public/nav2.png"></image>
+    <text>拼锅</text>
+  </view>
+  <view class="menu-item" bindtap="getInfo" data-id="31" data-val="烤鱼">
+    <image src="../../image/public/nav3.png"></image>
+    <text>烤鱼</text>
+  </view>
+  <view class="menu-item" bindtap="getInfo" data-id="32" data-val="辅菜">
+    <image src="../../image/public/nav4.png"></image>
+    <text>辅菜</text>
+  </view>
+</view>
+<view class="p-title">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">招牌菜</view>
+</view>
+<view class="accessory">
+  <block wx:for="{{accessoryImg}}" wx:key="unique">
+    <image class="index{{index+1}}" src="{{imgUrl}}{{item.logo}}" data-val="{{item.link}}" bindtap="navigate"></image>
+  </block>
+</view>
+<image src="../../image/public/banner.png" class="banner_center"></image>
+<view class="p-title">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">最新菜品</view>
+</view>
+<view class="product">
+  <view class="product-list">
+  <block wx:for="{{productList}}" wx:key="unique">
+    <view class="product-item" bindtap="navigate" data-val="{{item.id}}">
+      <image src="{{imgUrl}}{{item.logo}}" mode="scaleToFill"></image>
+      <view class="overflow">{{item.title}}</view>
+    </view>
+  </block>
+  </view>
+</view>
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

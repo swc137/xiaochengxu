@@ -1,0 +1,94 @@
+<image src="../../image/banners.png" class="banners" mode="widthFix"></image>
+<view class="menu">
+  <image src="../../image/i-menu.png" class="icon-menu"></image>
+  <view class="menu-list">
+    <text class="{{menu1}}" bindtap="menu1">妇科专家</text>
+    <text class="{{menu2}}" bindtap="menu2">男科专家</text>
+    <text class="{{menu3}}" bindtap="menu3">肛肠专家</text>
+  </view>
+</view>
+
+<view class="doctor-item">
+  <image src="../../image/doctor1.png" class="doctor-img" mode="widthFix"></image>
+  <view class="f-20 doctor-info">
+    <view class="f-28 color-b f-b">范大梅<text class="color-0">主治医生</text></view>
+    <view class="color-b border-b">从医时间：40余年</view>
+    <view class="color-b">擅长项目</view>
+    <view>宫颈癌、葡萄胎、子宫脱垂、子宫肌瘤(腔镜)、卵巢囊肿(腔镜)、子宫内膜异位、宫外孕(腔镜)、卵巢癌、子宫全切、子宫次全切等妇科疑难杂症。</view>
+    <text class="doctor-detail">医生详情</text>
+    <text class="order">预约挂号</text>
+    <view class="left-weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+    <view class="right-weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+</view>
+<view class="doctor-item">
+  <image src="../../image/doctor2.png" class="doctor-img" mode="widthFix"></image>
+  <view class="f-20 doctor-info">
+    <view class="f-28 color-b f-b">陈 康<text class="color-0">主治医生</text></view>
+    <view class="color-b border-b">从医时间：30余年</view>
+    <view class="color-b">擅长项目</view>
+    <view>微痛人流手术、宫腹腔镜取胚术；外阴白癍、盆腔炎、附件炎、月经不调等，特别擅长应用LEEP刀治疗各种宫颈疾病。</view>
+    <text class="doctor-detail">医生详情</text>
+    <text class="order">预约挂号</text>
+    <view class="left-weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+    <view class="right-weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+</view>
+
+<view class="banner-text">
+  <image src="../../image/banner-text.png"></image>
+</view>
+
+<view class="ad-img">
+  <image src="../../image/ad-img1.jpg" class="img1"></image>
+  <image src="../../image/ad-img2.jpg" class="img2"></image>
+  <image src="../../image/ad-img3.jpg" class="img3"></image>
+</view>
+
+<view class="bottom-content">
+  <view>接诊时间:早8:00 — 晚20:00（节假日无休）</view>
+  <image src="../../image/tips.png" class="tips"></image>
+  <view>医院地址:盐城市建军东路66号</view>
+  <view>预约电话:0515 — 88380012（无节假日医院）</view>
+</view>
+
+<view class="b-menu">
+  <view class="menu-i" bindtap="toIndex">
+    <image src="../../image/menu-index.png" mode="widthFix"></image>
+    <text>首页</text>
+  </view>
+  <view class="menu-q">
+    <image src="../../image/menu-q.png" mode="widthFix"></image>
+    <text>快速问诊</text>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="menu-y">
+    <image src="../../image/menu-y.png" mode="widthFix"></image>
+    <text>预约挂号</text>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+</view>

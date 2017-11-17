@@ -1,0 +1,30 @@
+.address-item{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+radio{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+}
+.item-top{
+  padding: 20rpx 30rpx;
+  margin-left: 80rpx;
+}
+.address{
+  color: #999;
+}
+.add{
+  position: fixed;
+  width: 96%;
+  margin-left: 2%;
+  bottom: 20rpx;
+  background-color: #42AA49;
+  color: #fff;
+}

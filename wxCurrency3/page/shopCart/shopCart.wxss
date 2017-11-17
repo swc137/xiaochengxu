@@ -1,0 +1,89 @@
+.shopCart-list{
+  background-color: #fff;
+}
+.shopCart-item{
+  padding: 30rpx;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.shopCart-item checkbox{
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.cart-image{
+  width: 177rpx;
+  height: 132rpx;
+  display: block;
+  /* margin-left: 70rpx; */
+  float: left;
+}
+.i-info{
+  width: 60%;
+  float: left;
+  margin-left: 30rpx;
+}
+.i-name{
+  color: #666;
+}
+.i-price{
+  color: #ff6600;
+  margin-top: 40rpx;
+}
+.detele{
+  position: absolute;
+  width: 44rpx;
+  height: 44rpx;
+  top: 30rpx;
+  right: 30rpx;
+}
+.i-num{
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+}
+.i-minus,.i-add{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.nums{
+  width: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.settlement{
+  position: fixed;
+  bottom: 0;
+  width: 97%;
+  height: 114rpx;
+  line-height: 114rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-left: 3%;
+}
+.settlement checkbox{
+  width: 38rpx;
+  height: 38rpx;
+  float: left;
+}
+.set-text{
+  float: left;
+  font-weight: 600;
+  margin-left: 28rpx;
+  font-size: 30rpx;
+}
+.set-btn{
+  width: 220rpx;
+  background-color: #ff9900;
+  float: right;
+  text-align: center;
+  color: #fff;
+}

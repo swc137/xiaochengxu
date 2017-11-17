@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/product/product",
+    "page/more/more",
+    "page/mall/mall",
+    "page/detail/detail",
+    "page/category/category",
+    "page/projectDetail/projectDetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "砖瓦商城",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#2072cf",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/public/index.png",
+        "selectedIconPath": "image/public/index-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/mall/mall",
+        "iconPath": "image/public/classify.png",
+        "selectedIconPath": "image/public/classify-a.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "page/product/product",
+        "iconPath": "image/public/reserve.png",
+        "selectedIconPath": "image/public/reserve-a.png",
+        "text": "项目"
+      },
+      {
+        "pagePath": "page/more/more",
+        "iconPath": "image/public/more.png",
+        "selectedIconPath": "image/public/more-a.png",
+        "text": "更多"
+      }
+    ]
+  },
+  "debug": false
+}

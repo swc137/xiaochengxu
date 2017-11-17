@@ -1,0 +1,55 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="menu">
+  <view class="menu-item" bindtap="toMall">
+    <image src="../../image/public/item2.png"></image>
+    <text>配件商城</text>
+  </view>
+   <view class="menu-item" bindtap="toProduct" data-val="38">
+    <image src="../../image/public/item1.png"></image>
+    <text>美容装潢</text>
+  </view>
+  <view class="menu-item" bindtap="toProduct" data-val="39">
+    <image src="../../image/public/item3.png"></image>
+    <text>维修保养</text>
+  </view>
+  <view class="menu-item" bindtap="toVIP">
+    <image src="../../image/public/item4.png"></image>
+    <text>会员系统</text>
+  </view>
+</view>
+<view class="notice">
+  <image src="../../image/public/notice.png"></image>
+  <view class="notice-text overflow" bindtap="toAct">{{act_title}}</view>
+</view>
+
+<view class="p-title">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">热门配件</view>
+</view>
+<view class="accessory">
+  <block wx:for="{{accessoryImg}}" wx:key="unique">
+    <image class="index{{index+1}}" src="{{imgUrl}}{{item.logo}}" data-val="{{item.link}}" bindtap="navigate"></image>
+  </block>
+</view>
+
+ <view class="p-title" bindtap="toVIP">
+  <image src="../../image/public/title.png"></image>
+  <view class="p-text">新闻资讯<text class="news-more" bindtap="toNews">更多</text></view>
+</view>
+<view class="news">
+  <block wx:for="{{news}}" wx:key="unique">
+    <view class="news-item" data-val="{{item.id}}" bindtap="newsDetail">
+      <image src="{{imgUrl}}{{item.logo}}"  mode="aspectFill" ></image>
+      <view class="overflow news-text">{{item.title}}</view>
+    </view>
+  </block>
+</view> 
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

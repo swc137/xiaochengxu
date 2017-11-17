@@ -1,0 +1,7 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="content">
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <map bindtap="openLocation" class="map" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" markers="{{markers}}" scale="14"></map>
+</view>

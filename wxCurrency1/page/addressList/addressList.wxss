@@ -1,0 +1,44 @@
+.addressList{
+  padding-bottom: 130rpx;
+}
+.address-item{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.item-top{
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.address{
+  color: #999;
+}
+.item-bottom{
+  padding: 20rpx 30rpx;
+}
+.item-bottom image{
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+}
+.btn-delete{
+  margin-left: 30rpx;
+}
+.btn-edit,.btn-delete{
+  position: relative;
+  padding-left: 40rpx;
+}
+.btn-edit image,.btn-delete image{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.add{
+  position: fixed;
+  width: 96%;
+  margin-left: 2%;
+  bottom: 20rpx;
+  background-color: #42AA49;
+  color: #fff;
+}

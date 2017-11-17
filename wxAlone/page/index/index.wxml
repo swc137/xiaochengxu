@@ -1,0 +1,22 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="company_about v-line">
+  <view class="v-title">{{address}}</view>
+</view>
+<view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+  <view><image src='../../image/public/i-phone.png' class="v-icon"></image>{{phone}}</view>
+  <view class="right-arrow"></view>
+</view>
+
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="content">
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <map bindtap="openLocation" class="map" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" markers="{{markers}}" scale="14"></map>
+</view>

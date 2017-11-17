@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/person/person",
+    "page/register/register",
+    "page/login/login",
+    "page/more/more",
+    "page/mall/mall",
+    "page/detail/detail",
+    "page/product/product",
+    "page/news/news",
+    "page/news_detail/news_detail",
+    "page/nav/nav"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "苏州戟速汽车维修",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#2072cf",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/public/index.png",
+        "selectedIconPath": "image/public/index-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/mall/mall",
+        "iconPath": "image/public/classify.png",
+        "selectedIconPath": "image/public/classify-a.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "page/person/person",
+        "iconPath": "image/public/personal.png",
+        "selectedIconPath": "image/public/personal-a.png",
+        "text": "VIP会员"
+      },
+      {
+        "pagePath": "page/more/more",
+        "iconPath": "image/public/more.png",
+        "selectedIconPath": "image/public/more-a.png",
+        "text": "更多"
+      }
+    ]
+  },
+  "debug": false
+}

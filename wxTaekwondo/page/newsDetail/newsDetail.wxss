@@ -1,0 +1,33 @@
+.detail-img{
+  width: 100%;
+  display: block;
+}
+.d-info{
+  background-color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.d-price{
+  color: #ff0000;
+  margin-left: 30rpx;
+}
+.d-nums{
+  float: right;
+}
+.d-detail{
+  background-color: #fff;
+  padding: 0 30rpx;
+}
+.d-title{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.d-content{
+  padding-top: 20rpx;
+  line-height: 1.6;
+}

@@ -1,0 +1,48 @@
+/* reset */
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 1.6;
+  font-family:'微软雅黑';
+  overflow-x:hidden;
+}
+.overflow{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hidden{
+  display:none;
+}
+.show{
+  display: block;
+}
+.p-title{
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  line-height: 80rpx;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.p-title image{
+  width: 26rpx;
+  height: 26rpx;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.p-title .p-text{
+  color: #666;
+  margin-left: 50rpx;
+}
+.weapp{
+  position:absolute;
+  top:0;
+  padding: 0 40rpx;
+  left:0;
+  opacity: 0;
+}

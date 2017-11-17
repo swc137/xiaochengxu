@@ -1,0 +1,18 @@
+<view class="order-list" wx:if="{{orderList.length>0}}">
+  <block wx:for="{{orderList}}" wx:key="unique">
+    <view bindtap="">
+      <view class="orderNo">订单号：{{item.orderno}} <text class="status">{{item.status == "1" ? "待付款":"完成"}}</text></view>
+      <block wx:for="{{item.product_info}}" wx:key="unique">
+        <view class="order-item">
+          <image src='{{imgUrl}}{{item.logo}}' class="order-img"></image>
+          <view class="item-detail">
+            <view>{{item.title}}</view>
+            <view class="item-price">¥{{item.price}}</view>
+            <view class="orderNums">x {{item.num}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>
+<view wx:else class="no-data">暂无订单</view>

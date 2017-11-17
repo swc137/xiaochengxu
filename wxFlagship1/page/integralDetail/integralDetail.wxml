@@ -1,0 +1,21 @@
+<view class="integral-list">
+
+  <view class="integral-item">
+    <view>积分记录名称</view>
+    <view>2017-10-21 13:20</view>
+    <text class="red">+1</text>
+  </view>
+
+  <view class="integral-item">
+    <view>积分记录名称</view>
+    <view>2017-10-21 13:20</view>
+    <text class="red">+1</text>
+  </view>
+
+  <view class="integral-item">
+    <view>积分记录名称</view>
+    <view>2017-10-21 13:20</view>
+    <text class="red">+1</text>
+  </view>
+  
+</view>

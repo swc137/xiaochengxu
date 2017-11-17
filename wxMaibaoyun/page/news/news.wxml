@@ -1,0 +1,12 @@
+<!--news.wxml-->
+<view class="p-title news">
+  <view class="p-text">动态资讯</view>
+</view>
+<view class="news">
+  <block wx:for="{{news}}" wx:key="unique">
+    <view class="news-item" data-val="{{item.id}}" bindtap="newsDetail">
+      <image wx:if="{{item.logo}}" src="{{imgUrl}}{{item.logo}}" mode="widthFix"></image>
+      <view class="overflow news-text">{{item.title}}</view>
+    </view>
+  </block>
+</view>

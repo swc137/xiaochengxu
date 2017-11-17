@@ -1,0 +1,77 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="coupon">
+  <view>优惠券<text class="more">更多 ></text></view>
+  <view class="coupon-list">
+    <image src='../../image/coupon.png'></image>
+    <image src='../../image/coupon.png'></image>
+    <image src='../../image/coupon.png'></image>
+  </view>
+</view>
+
+<view class="ad-banner">
+  <image class='fl ad1'></image>
+  <view class="ad-right">
+    <image class="ad2"></image>
+    <image class="ad3"></image>
+  </view>
+</view>
+
+<view class="m-banner">
+  <image src='https://xiaochengxu2.zhuniu.com/upload/banner/dbf224628b7ff37c05ebe24f658e028a.png'></image>
+</view>
+
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="product-banner">
+  <view class="prod-item">
+    <image src=''></image>
+    <view class="more-overflow">皮革编制编织手拿包</view>
+    <view class="color-f2">¥399元/件</view>
+  </view>
+  <view class="prod-item">
+    <image src=''></image>
+    <view class="more-overflow">皮革编制编织手拿包</view>
+    <view class="color-f2">¥399元/件</view>
+  </view>
+  <view class="prod-item">
+    <image src=''></image>
+    <view class="more-overflow">皮革编制编织手拿包</view>
+    <view class="color-f2">¥399元/件</view>
+  </view>
+</view>
+
+<view class="hot-product">
+  <view class="p-title">热门商品</view>
+  <view class="product-list" hidden="{{menuActive[0]?'':'hidden'}}">
+  <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+        <view class="fr item-content">
+          <view class="more-overflow">南京不低我阿斯蒂芬吧</view>
+          <view class="item-price">¥16.00</view>
+        </view> 
+      </view>
+    <block wx:for="{{productList}}"  wx:key="unique">
+      <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+        <view class="fr item-content">
+          <view class="more-overflow">{{item.info.title.value}}</view>
+          <view class="item-price">¥{{item.info.price.value}}</view>
+        </view> 
+      </view>
+    </block>
+    <view class="loading" bindtap='toMall'>查看更多></view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="bg-personal">
+  <image src="{{userInfo.avatarUrl}}" class="icon-head"></image>
+  <view class="bg-name">{{userInfo.nickName}}</view>
+</view>
+<view class="contact-us">联系我们 Contact us</view>
+<view class="nav-list">
+  <view class="v-line border-b">
+    <view>公司名称：{{companyName}}</view>
+  </view>
+  <view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+    <view>联系方式：{{phone}}</view>
+    <view class="right-arrow"></view>
+  </view>
+</view>
+<view class="company-about">
+  {{companyDesc}}
+</view>
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

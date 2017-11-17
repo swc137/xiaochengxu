@@ -1,0 +1,18 @@
+<view class="picker">
+  <text>{{name}}</text>
+</view>
+<view class="product">
+  <view class="person-list">
+  <block wx:for="{{productList}}" wx:key="unique">
+     <view class="person-item" bindtap="designerDetails" data-val="{{item.id}}">
+      <image src="{{imgUrl}}{{item.head_img}}" mode="scaleToFill"></image>
+      <view class="person-content">
+        <view class="overflow">设计师：{{item.designer_name}}</view>
+        <view class="overflow">设计作品：{{item.designer_name}}套</view>
+        <view class="overflow">理念：{{item.des}}</view>
+      </view>
+    </view>
+  </block>
+  </view>
+  <image class="noData {{noData}}" src="../../image/public/noData.png"></image>
+</view>

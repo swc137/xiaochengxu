@@ -1,0 +1,14 @@
+/* news.wxss */
+.news-item{
+  background-color: #fff;
+  margin-bottom:30rpx;
+}
+.news-item image{
+  width: 100%;
+  height: 280rpx;
+  display:block;
+}
+.news-item .news-text{
+  width:auto;
+  padding: 18rpx 30rpx;
+}

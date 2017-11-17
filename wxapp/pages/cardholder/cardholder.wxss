@@ -1,0 +1,77 @@
+/* pages/attach/attach.wxss */
+.container1{
+    padding-bottom:150rpx;
+    font-size: 30rpx;
+}
+.banner{
+    height: 200rpx;
+    line-height: 200rpx;
+    text-align: center;
+    margin: 20rpx 0;
+    color:#2072cf;
+    background: url("http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/wish2.jpg") no-repeat center center;
+    background-size: 750rpx 200rpx;
+    /*border: 2rpx solid #999;*/
+    /*border-bottom: 2rpx solid #e8e8e8;*/
+}
+.row{
+    padding:0 30rpx 0;
+    background-color: #fff;
+    /*border-bottom: 2rpx solid #e8e8e8;*/
+}
+.row,input,picker,switch,.fr{
+    height: 100rpx;
+    line-height: 100rpx;
+}
+switch{
+    box-sizing: border-box;
+}
+.row text{
+    float: left;
+    width: 36%;
+    color:#222;
+}
+input,picker,switch,.fr{
+    float: right;
+    width: 64%;
+    overflow: hidden;/*文字超长截断加点*/
+}
+
+.input_verify{
+    float: right;
+}
+.btn_verify.disable{
+    color:#ccc;
+}
+/*黑色闪框*/
+.bubble_box{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 30rpx;
+    color: #fff;
+    text-align: center;
+    border-radius: 15rpx;
+    z-index: 3;
+}
+button{
+    background-color: #2072cf;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius:40rpx;
+    color: #fff;
+    margin: 60rpx 30rpx 30rpx;
+}
+
+.nocard{
+    color: #2072cf;
+    text-align: center;
+    font-size: 26rpx;
+}

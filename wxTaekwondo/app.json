@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/person/person",
+    "page/more/more",
+    "page/mall/mall",
+    "page/shopCart/shopCart",
+    "page/buy/buy",
+    "page/newsDetail/newsDetail",
+    "page/shopDetail/shopDetail",
+    "page/order/order",
+    "page/detail/detail",
+    "page/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff9900",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "跆拳道",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff9933",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/public/index.png",
+        "selectedIconPath": "image/public/index-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/mall/mall",
+        "iconPath": "image/public/classify.png",
+        "selectedIconPath": "image/public/classify-a.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "page/shopCart/shopCart",
+        "iconPath": "image/public/shopCart.png",
+        "selectedIconPath": "image/public/shopCart-a.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "page/person/person",
+        "iconPath": "image/public/personal.png",
+        "selectedIconPath": "image/public/personal-a.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": false
+}

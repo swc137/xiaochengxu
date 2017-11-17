@@ -1,0 +1,39 @@
+<view class="bg-personal">
+  <image src="{{userInfo.avatarUrl}}" class="icon-head fl"></image>
+  <view class="bg-name fl">{{userInfo.nickName}}</view>
+</view>
+
+<view class="middle-menu">
+  <view class="middle-item">
+    <view class="red">3</view>
+    <view class="color-6">我的订单</view>
+  </view>
+  <view class="middle-item">
+    <view class="red">3</view>
+    <view class="color-6">我的优惠券</view>
+  </view>
+  <view class="middle-item">
+    <view class="red">138</view>
+    <view class="color-6">我的积分</view>
+  </view>
+</view>
+
+<view class="nav-list">
+  <!-- <view class="v-line border-b" bindtap='toOrderList'>
+    <view><image src='../../image/public/icon-order.png' class="v-icon"></image>我的订单</view>
+    <view class="right-arrow"></view>
+  </view> -->
+  <view class="v-line border-b" bindtap='toAddressList'>
+    <view><image src='../../image/public/icon-address.png' class="v-icon"></image>收货地址</view>
+    <view class="right-arrow"></view>
+  </view>
+
+  <view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+    <view><image src='../../image/public/icon-online.png' class="v-icon"></image>客服热线<view class="fr">{{phone}}</view></view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="v-line border-b" bindtap='toAbout'>
+    <view><image src='../../image/public/icon-about.png' class="v-icon"></image>关于我们</view>
+    <view class="right-arrow"></view>
+  </view>
+</view>

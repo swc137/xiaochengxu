@@ -1,0 +1,40 @@
+.share-bg{
+  width: 100%;
+  height: 100%;
+  background: url('https://xiaochengxu2.zhuniu.com/upload/banner/09dc74c69a0de7820a6caf0e0fbf86e3.jpeg') no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.share-txt{
+  position: absolute;
+  bottom: 38%;
+  width: 80%;
+  height: 75rpx;
+  line-height: 75rpx;
+  left: 10%;
+  background-color: #a42303;
+  border: 2rpx solid #000;
+  border-radius: 70rpx;
+  color: #fff;
+  text-align: center;
+}
+.sh-result{
+  position: absolute;
+  bottom: 30%;
+  font-size: 40rpx;
+  width: 80%;
+  left: 10%;
+  color: #fff;
+  text-align: center;
+}
+.kan_btn{
+  position: absolute;
+  bottom: 18%;
+  width: 60%;
+  height: 100rpx;
+  left: 20%;
+  opacity: 0;
+}
+.color-o{
+  color: #fcd102;
+}

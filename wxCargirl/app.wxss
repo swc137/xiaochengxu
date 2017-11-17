@@ -1,0 +1,155 @@
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 1.6;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.overflow{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.more-overflow{
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.hidden{
+  display:none;
+}
+.show{
+  display: block;
+}
+/*标题*/
+.p-title{
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  line-height: 80rpx;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.p-title image{
+  width: 26rpx;
+  height: 26rpx;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.p-title .p-text{
+  color: #666;
+  margin-left: 50rpx;
+}
+/*在线客服*/
+.page-body-line{
+  position:fixed;
+  bottom:60rpx;
+  right:20rpx;
+  width:78rpx;
+  height:78rpx;
+  background-color: #2072cf;
+  border-radius: 50%;
+}
+.page-body-line contact-button{
+  position: absolute;
+  top: 14rpx;
+  left: 12rpx;
+}
+/*字体颜色*/
+.color-6{
+  color:#666;
+}
+.color-3{
+  color:#333;
+}
+.color-9{
+  color:#999;
+}
+.color-f2{
+  color:#ffa200;
+}
+/*边框线*/
+.border-b{
+  border-bottom: 2rpx solid #eee;
+}
+.more{
+  float: right;
+  color: #5299c7;
+}
+/*左右*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*一行显示*/
+.v-line{
+  padding: 20rpx 60rpx 20rpx 30rpx;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.v-title{
+  font-size: 32rpx;
+}
+.v-icon{
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: middle;
+  margin-right: 6rpx;
+}
+.right-arrow {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 30rpx;
+  border: none;
+  border-left: 0;
+  border-bottom: 0;
+  border-top: 1px solid #969696;
+  border-right: 1px solid #969696;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.no-data{
+  color:#999;
+  text-align: center;
+  line-height: 120rpx;
+  display: block;
+}
+.i-bottom{
+  width: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  text-align: center;
+  box-shadow: 4rpx 4rpx 8rpx #666;
+}
+.wechat{
+  bottom: 120rpx;
+}
+.i-bottom image{
+  width: 44rpx;
+  height: 36rpx;
+  margin-top: 22rpx;
+}
+.i-bottom contact-button{
+  position: absolute;
+  top: 14rpx;
+  left: 16rpx;
+  opacity: 0;
+}
+.wxParse text{
+  display: none;
+}

@@ -1,0 +1,17 @@
+.content{
+  padding: 30rpx;
+  line-height: 2;
+  color: #666;
+  text-align: justify;
+  background: #fff;
+}
+.content-image{
+  margin-top: 20rpx;
+}
+.content-image image,.wxParse image{
+  width: 100% !important;
+}
+.map{
+  width: 100%;
+  height: 600rpx;
+}

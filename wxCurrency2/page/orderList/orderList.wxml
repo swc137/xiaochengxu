@@ -1,0 +1,56 @@
+<block wx:for="{{orderList}}" wx:key="unquie">
+  <view wx:if="{{item.status == 0}}">
+    <view class="order-item">
+      <view data-id="{{item.order_no}}" bindtap="toOrderDetail">
+        <view class="item-top">
+          <text>订单号：{{item.order_no}}</text>
+          <text class="order-status finish">待支付</text>
+        </view>
+        <block wx:for="{{item.orderProducts}}" wx:key="unquie">
+          <view class="order-product">
+            <image src='{{imgUrl}}{{item.logo}}' class="fl"></image>
+            <view class="product-detail">
+              <view class="product-name more-overflow">{{item.title}}</view>
+              <view class="product-price">
+                ¥{{item.price}}
+                <text class="fr product-num">x{{item.num}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="item-bottom">
+        共计:¥{{item.total_price}}
+        <view class="order-btn">
+          <!-- <text class="btn-cancel" data-id="{{item.id}}" bindtap='cancelOrder'>取消订单</text> -->
+          <text class="btn-pay" data-id="{{item.id}}">去支付</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class="order-item" data-id="{{item.id}}" bindtap="toOrderDetail">
+      <view class="item-top">
+        <text>订单号：{{item.order_no}}</text>
+        <text class="order-status">交易完成</text>
+      </view>
+      <block wx:for="{{item.orderProducts}}" wx:key="unquie">
+        <view class="order-product">
+          <image src='{{imgUrl}}{{item.logo}}' class="fl"></image>
+          <view class="product-detail">
+            <view class="product-name more-overflow">{{item.title}}</view>
+            <view class="product-price">
+              ¥{{item.price}}
+              <text class="fr product-num">x{{item.num}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="item-bottom">
+        共计:¥{{item.total_price}}
+      </view>
+    </view>
+  </view>
+</block>
+
+

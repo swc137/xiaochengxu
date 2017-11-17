@@ -1,0 +1,31 @@
+<view class="bg-w">
+  <view class="form">
+    <view class='input-line'>
+      <label>姓名：</label>
+      <input type='text' placeholder='请输入您的真实姓名' value="{{name}}" bindinput="inName"></input>
+    </view>
+    <view class='input-line'>
+      <label>手机号：</label>
+      <input type='text' placeholder='请输入您的真实手机号' value="{{mobile}}" bindinput="inMobile"></input>
+    </view>
+  </view>
+  <view class="shopCart-list">
+    <block wx:for="{{cartInfo}}" wx:key="unique">
+      <view class="shopCart-item">
+        <!-- <checkbox value="{{item.id}}" checked="{{checked}}" /> -->
+        <image src="{{imgUrl}}{{item.logo}}" class="cart-image"></image>
+        <view class="i-info">
+          <view class="i-name">{{item.title}}</view>
+          <view class="i-price">¥{{item.price}}</view>
+        </view>
+        <view class="i-num">
+          <view class="nums">x {{item.num}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="total">合计¥{{total}}元</view>
+  <view class="buy-now" bindtap='toPay'>去支付</view>
+</view>
+

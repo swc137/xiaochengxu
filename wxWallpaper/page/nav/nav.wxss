@@ -1,0 +1,41 @@
+.prodcut-picker{
+  position: relative;
+}
+.prodcut-picker view{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  text-align: center;
+}
+.icon-down{
+  width:16rpx;
+  height:10rpx;
+  position:absolute;
+  top:34rpx;
+  right:5%;
+}
+.product{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.product-list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.product-item{
+  width: 48%;
+  margin-top: 30rpx;
+}
+.product-item image{
+  height: 320rpx;
+  width: 100%;
+  background-color:#efefef;
+  box-shadow:4rpx 12rpx 16rpx #bbb;
+}
+.noData{
+  width:36%;
+  margin:20% 32%;
+  height:300rpx;
+}

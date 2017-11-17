@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "page/rollCenter/rollCenter",
+    "page/panicBuy/panicBuy",
+    "page/index/index",
+    "page/detail/detail",
+    "page/rollChoose/rollChoose",
+    "page/rollDetail/rollDetail",
+    "page/integralDetail/integralDetail",
+    "page/integralMall/integralMall",
+    "page/person/person",
+    "page/index3/index3",
+    "page/index2/index2",
+    "page/shopCart/shopCart",
+    "page/addressChange/addressChange",
+    "page/order/order",
+    "page/orderDetail/orderDetail",
+    "page/orderList/orderList",
+    "page/addAddress/addAddress",
+    "page/addressList/addressList",
+    "page/mall/mall",
+    "page/product/product",
+    "page/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "旗舰版",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": "false"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff9933",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "iconPath": "image/public/index.png",
+        "selectedIconPath": "image/public/index-a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "page/mall/mall",
+        "iconPath": "image/public/classify.png",
+        "selectedIconPath": "image/public/classify-a.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "page/shopCart/shopCart",
+        "iconPath": "image/public/shopCart.png",
+        "selectedIconPath": "image/public/shopCart-a.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "page/person/person",
+        "iconPath": "image/public/personal.png",
+        "selectedIconPath": "image/public/personal-a.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 100000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": false
+}

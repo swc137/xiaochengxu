@@ -1,0 +1,22 @@
+.btn-save{
+  position: fixed;
+  bottom: 20rpx;
+  background-color: #42AA49;
+  color: #fff;
+  width: 96%;
+  margin-left: 2%;
+}
+input{
+  text-align: right;
+}
+picker{
+  text-align: right;
+}
+.v-line .v-label{
+  width: 25%;
+  display: inline-block;
+}
+.v-right{
+  width: 75%;
+  float: right;
+}

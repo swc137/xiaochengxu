@@ -1,0 +1,12 @@
+<view class="top-bg">
+    <image class="bg" src='{{imgUrl}}' mode='widthFix'></image>
+  <view>
+    <view class="meet">{{meeting_name}}</view>
+    <view wx:if="{{msg == ''}}">
+      <button bindtap="toForm">点击报名</button>
+    </view>
+    <view wx:else>
+      <button bindtap="toForm" disabled>点击报名</button>
+    </view>
+  </view>
+</view>

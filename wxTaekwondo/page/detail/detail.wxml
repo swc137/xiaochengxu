@@ -1,0 +1,33 @@
+<image src='{{imgUrl}}{{productDetail.logo}}' class='detail-img' mode='widthFix'></image>
+<view class='d-info'>
+  <text>{{productDetail.title}}</text><text class='d-price'>¥{{productDetail.price}}</text>
+</view>
+<view class="d-detail">
+  <view class="d-title">图文详情</view>
+  <view class="d-content">
+    <block wx:for="{{content}}" wx:key="unique">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <block wx:for="{{productDetail.images}}" wx:key="unique">
+    <image src='{{imgUrl}}{{item}}' class='detail-img' mode='widthFix'></image>
+  </block>
+</view>
+<view class="btn-bottom">
+  <view class="btn-contact">
+    <image src='../../image/public/icon-contact.png' class="btn-image"></image>
+    <view>客服</view>
+    <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+  </view>
+  <view class="btn-contact" bindtap="toCart">
+    <image src='../../image/public/icon-shopCart.png' class="btn-image"></image>
+    <view>购物车</view>
+  </view>
+  <view class="btn-addcart" bindtap="setCart">
+    加入购物车
+  </view>
+  <view class="btn-buy">
+    立即购买
+  </view>
+</view>
+<view class="overtxt {{over}}">加入购物车成功!</view>

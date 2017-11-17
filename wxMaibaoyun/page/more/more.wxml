@@ -1,0 +1,16 @@
+<image src="../../image/index/dai1.jpg" mode="widthFix"></image>
+<image src="../../image/index/dai2.jpg" mode="widthFix"></image>
+<image src="../../image/index/dai3.jpg" mode="widthFix"></image>
+<!-- <image src="../../image/index/dai4.png" mode="widthFix"></image> -->
+<!-- <image src="../../image/index/dai5.png" mode="widthFix"></image> -->
+<!-- <image src="../../image/index/dai6.png" mode="widthFix"></image> -->
+<image src="../../image/index/dai7.jpg" mode="widthFix"></image>
+<image src="../../image/index/dai8.jpg" mode="widthFix"></image>
+<image src="../../image/index/dai9.jpg" mode="widthFix"></image> 
+
+<view class="p-title">
+  <view class="p-text">关于我们</view>
+</view>
+<view class="about-code">
+  <image src="../../image/index/code.png" mode="widthFix" ></image>
+</view>

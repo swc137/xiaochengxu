@@ -1,0 +1,7 @@
+<view class="share-bg">
+  <view class="share-txt">已有<text class="color-o">{{person_num}}</text>人帮忙砍价，还可以砍<text class="color-o">{{kan_price}}</text>元</view>
+  <view class="sh-result {{show}}">已砍价<text class="color-o">{{price}}元</text></view>
+  <view class="sh-result">{{status == 2?'砍价活动已结束':''}}</view>
+
+  <view class="kan_btn" bindtap="toKan"></view>
+</view>

@@ -1,0 +1,13 @@
+<view class="top-area {{topImgHidden}}">
+  <image class="top-img" mode="aspectFill" src="{{imgUrl}}{{detailInfo.logo}}"></image>
+</view>
+<view class="detail">
+  <view class="title">{{detailInfo.title}}</view>
+  <!--<view class="content">{{detailInfo.description}}</view>-->
+  <block wx:for="{{content}}" wx:key="unique">
+    <view class="content">{{item}}</view>
+  </block>
+  <block wx:for="{{images}}" wx:key="unique">
+    <image src="{{imgUrl}}{{item}}" bindload="imgLoad" bindtap="bigImg"  data-val="{{index}}" data-index="{{ index }}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+  </block>
+</view>

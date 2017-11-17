@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit">
+  <view class="v-line border-b">
+    <text class="v-label">收件人：</text>
+    <view class="v-right">
+      <input placeholder='收件人' name="username" value="{{detail.username}}"></input>
+    </view>
+  </view>
+  <view class="v-line border-b">
+    <text class="v-label">手机号：</text>
+    <view class="v-right">
+      <input placeholder='手机号' maxlength='11' name="mobile" value="{{detail.mobile}}"></input>
+    </view>
+  </view>
+  <view class="v-line border-b">
+    <text class="v-label">所在地区：</text>
+    <picker class="v-right" mode="region" bindchange='bindRegionChange' value='{{region}}'>
+      <view class="picker">{{region}}</view>
+    </picker>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="v-line">
+    <text class="v-label">详细地址：</text>
+    <view class="v-right">
+      <input placeholder='请填写详细地址' name="address" value="{{detail.address}}"></input>
+    </view>
+  </view>
+  <button formType="submit" class="btn-save">保存</button>
+</form>
+

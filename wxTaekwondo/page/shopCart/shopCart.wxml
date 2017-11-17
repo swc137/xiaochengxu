@@ -1,0 +1,27 @@
+<checkbox-group bindchange='checkChange'>
+  <view class="shopCart-list" wx:if="{{cartInfo.length > 0}}">
+    
+    <block wx:for="{{cartInfo}}" wx:key="unique">
+      <view class="shopCart-item">
+        <!-- <checkbox value="{{item.id}}" checked="{{checked}}" /> -->
+        <image src="{{imgUrl}}{{item.logo}}" class="cart-image"></image>
+        <view class="i-info">
+          <view class="i-name">{{item.title}}</view>
+          <view class="i-price">¥{{item.price}}</view>
+        </view>
+        <image src="../../image/public/i-detele.png" data-id="{{item.id}}" class="detele" bindtap='detele'></image>
+        <view class="i-num">
+          <image src="../../image/public/i-minus.png" data-id="{{item.id}}" class="i-minus" bindtap='minus'></image>
+          <view class="nums">{{item.num}}</view>
+          <image src="../../image/public/i-add.png" data-id="{{item.id}}" class="i-add" bindtap='add'></image>
+        </view>
+      </view>
+    </block>
+
+  </view>
+  <view wx:else class="no-data">购物车暂无课程</view>
+  <view class="settlement">
+    <view class="set-text">合计¥{{total}}元</view>
+    <view class="set-btn" bindtap='toBuy'>结算</view>
+  </view>
+</checkbox-group>

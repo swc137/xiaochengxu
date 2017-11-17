@@ -1,0 +1,14 @@
+<image src='{{imgUrl}}{{detailInfo.logo}}' class='detail-img' mode='widthFix'></image>
+<view class='d-info'>
+  <text>{{detailInfo.title}}</text>
+</view>
+<view class="d-detail">
+  <view class="d-content">
+    <block wx:for="{{content}}" wx:key="unique">
+      <view>{{item}}</view>
+    </block>
+  </view>
+  <block wx:for="{{detailInfo.images}}" wx:key="unique">
+    <image src='{{imgUrl}}{{item}}' class='detail-img' mode='widthFix'></image>
+  </block>
+</view>

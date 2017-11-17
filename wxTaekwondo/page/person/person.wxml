@@ -1,0 +1,24 @@
+<view class="bg-personal">
+  <image src="{{imgUrl}}" class="icon-head"></image>
+  <view class="bg-name">{{name}}</view>
+</view>
+<view class="order-menu">
+  <view class="order-item" data-val='' bindtap='toOrder'>
+    <image src="../../image/public/o-all.png"></image>
+    <view>全部</view>
+  </view>
+  <view class="order-item" data-val='1' bindtap='toOrder'>
+    <image src="../../image/public/o-dai.png"></image>
+    <view>待付款</view>
+  </view>
+  <view class="order-item" data-val='2' bindtap='toOrder'>
+    <image src="../../image/public/o-finish.png"></image>
+    <view>完成</view>
+  </view>
+</view>
+<view class="nav-list">
+  <view class="nav-item" bindtap='toAbout'>
+    关于我们
+    <view class="right-arrow"></view>
+  </view>
+</view>

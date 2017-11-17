@@ -1,0 +1,31 @@
+<view class="top-area">
+  <view class="integral">123</view>
+  <view class="top-text">我的积分</view>
+  <view class="top-detail" bindtap='toDetail'>积分明细</view>
+</view>
+<view class="shop">
+  <view class="shop-title">积分兑换</view>
+  <view class="shopList">
+    <view class="shopItem">
+      <image></image>
+      <view class="product-name overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">50积分</view>
+    </view>
+     <view class="shopItem">
+      <image></image>
+      <view class="product-name overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">50积分</view>
+    </view>
+     <view class="shopItem">
+      <image></image>
+      <view class="product-name overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">50积分</view>
+    </view>
+     <view class="shopItem">
+      <image></image>
+      <view class="product-name overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">50积分</view>
+    </view>
+  </view>
+
+</view>

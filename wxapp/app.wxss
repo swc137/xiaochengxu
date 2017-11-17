@@ -1,0 +1,135 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+/*公共样式*/
+page{
+  background-color: #f2f2f2;
+  font-size:30rpx;
+  line-height: 1.5;
+  color: #222;
+}
+
+/*公共颜色*/
+.color_22{color: #222;}
+.color_33{color: #333;}
+.color_66{color: #666;}
+.color_99{color: #999;}
+.color_55{color:#069e55}
+.color_19{color:#191919;}
+.color_cf{color:#2072cf;}
+.color_f2{color:#f2f2f2}
+/*背景颜色*/
+.bg_eb{background: #ebebeb;}
+.bg_f7{background-color: #f4f5f7}
+.bg_f2{background-color: #f2f2f2}
+/*公共字号*/
+.font_36{font-size: 36rpx;}
+.font_32{font-size: 32rpx;}
+.font_30{font-size: 30rpx;}
+.font_28{font-size: 28rpx;}
+.font_26{font-size: 26rpx;}
+/*line边线*/
+.border,.border-t,.border-l{
+  position: relative;
+}
+.border:after,.border-t:before,.border-l:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #e8e8e8; 
+   /*background-color: red; */
+}
+.border:after{
+  bottom: 0;   
+  left: 0;
+  width: 100%;
+  /*height: 1rpx;*/
+  height: 2rpx;
+  transform: scaleY(0.5);
+}
+.border-t:before{
+  top: 0;   
+  left: 0;
+  width: 100%;
+  height: 1rpx;
+  transform: scaleY(0.5);
+}
+.border-l:before{
+  left: 0;   
+  top: 0;   
+  height: 100%;
+  width: 1rpx;
+  transform: scaleX(0.5);
+}
+/*按钮*/
+.button{
+  padding-bottom: 30rpx;
+  font-size: 30rpx;
+}
+.button button,.button view{
+    background-color: #2072cf;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius:40rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 30rpx;
+    margin: 60rpx 30rpx 0;
+}
+/*验证码*/
+.btn_verify{
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 210rpx;
+    height: 100rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #2072cf;
+    z-index: 2;
+}
+.btn_verify_disable{
+    color: #999;
+}
+/*底部浮层*/
+.overlay{
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  opacity: 0.4;
+}
+.btn_verify_time{
+    color: #999;
+}
+
+/*黑色闪框*/
+.bubble_box{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 30rpx;
+    color: #fff;
+    text-align: center;
+    border-radius: 15rpx;
+    z-index: 3;
+}
+
+
+

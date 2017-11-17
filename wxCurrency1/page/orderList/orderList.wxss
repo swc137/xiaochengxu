@@ -1,0 +1,63 @@
+/* page/orderList/orderList.wxss */
+.order-item{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.item-top{
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.order-status{
+  color: #999;
+  float: right;
+}
+.finish{
+  color: #ffa200;
+}
+.order-product{
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  overflow: hidden;
+  position: relative;
+}
+.order-product image{
+  width: 180rpx;
+  height: 180rpx;
+  background: #ddd;
+}
+.product-detail{
+  float: left;
+  width: 66%;
+  margin-left: 20rpx;
+}
+.product-price{
+  position: absolute;
+  bottom: 20rpx;
+  left: 230rpx;
+  width: 62%;
+}
+.product-num{
+  color: #999;
+}
+.item-bottom{
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 30rpx;
+}
+.order-btn{
+  float: right;
+  color: #fff;
+}
+.btn-cancel{
+  padding: 10rpx 16rpx;
+  background: #ccc;
+  border-radius: 12rpx;
+  margin-right: 20rpx;
+}
+.btn-pay{
+  padding: 10rpx 16rpx;
+  background: #42ab49;
+  border-radius: 12rpx;
+}

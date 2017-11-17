@@ -1,0 +1,23 @@
+.form-title{
+  padding: 16rpx 30rpx 8rpx;
+  color: #666;
+}
+form input{
+  background-color: #fff;
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+form .line{
+  background-color: #fff;
+  padding: 30rpx;
+}
+form button{
+  margin-top: 40rpx;
+  width: 96%;
+  background-color: #000000;
+  color: #fff;
+}
+.red{
+  color:#ff0000;
+}

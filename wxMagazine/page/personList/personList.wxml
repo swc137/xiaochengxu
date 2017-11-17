@@ -1,0 +1,30 @@
+<view class="person-list">
+  <view wx:if="{{personList.length > 0}}">
+    <block wx:for="{{personList}}" wx:key="{{unqiue}}">
+    <view class="per-content">
+      <view class="person-item">
+        <view class="name">{{item.username}}<text>({{item.sex == 1?"男":"女"}})</text></view>
+        <view class="phone">手机：{{item.mobile}}</view>
+        <view wx:if="{{item.status== 1}}" class="sign">已签到</view>
+        <view wx:else class="dis-sign">未签到</view>
+        <view wx:if="{{item.zhusu == 1}}" class="zhu">单住</view>
+        <view wx:elif="{{item.zhusu == 2}}" class="zhu">合住</view>
+        <view wx:else class="zhu">不住</view>
+        <view class="btn-modify" wx:if="{{item.status == 0}}" data-id="{{item.id}}" bindtap="modify">修改</view> 
+      </view>
+    </view>
+    </block>
+  </view>
+  <view class="noInfo" wx:else>
+    暂未添加人员信息
+  </view>
+  
+</view>
+
+<view class="btn-bottom">
+  <view class="btn-left"><text class="color-9">当前报名人数：</text>{{personList.length}}</view>
+  <view class="btn-add" bindtap="addPerson">
+    <image src='../../image/public/i-add.png'></image>
+    <text class="add-txt">添加报名</text>
+  </view>
+</view>

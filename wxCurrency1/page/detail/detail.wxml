@@ -1,0 +1,56 @@
+<!-- <swiper indicator-color="#dddddd" indicator-active-color="#99ceee" indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper> -->
+<view class="top-img">
+  <image src='{{productDetail.logo_img}}'></image>
+</view>
+
+<view class="info">
+  <view class="title more-overflow">{{productDetail.title}}</view>
+  <view><text class="now-price">¥{{productDetail.price}}</text><text class="old-price"></text></view>
+</view>
+
+<view class="detail-title">
+  <text>图文详情</text>
+</view>
+<view class="detail">
+  <import src="../../wxParse/wxParse.wxml"/> 
+
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+
+  <block wx:for="{{content}}" wx:key="unique">
+    <view class="content">{{item}}</view>
+  </block>
+  <block wx:for="{{images}}" wx:key="unique">
+    <image src="{{imgUrl}}{{item}}" bindload="imgLoad" bindtap="bigImg"  data-val="{{index}}" data-index="{{ index }}" style="width:{{ imagesW[index].width }}rpx; height:{{ imagesW[index].height }}rpx;"></image>
+  </block>
+</view>
+
+<view class="btn-bottom">
+  <view class="btn-contact" bindtap="toCart">
+    <view class="num-area">
+      <image src='../../image/public/i-shopCart.png' class="btn-image"></image>
+      <!-- <view class="shopCart-num">12</view> -->
+    </view>
+    
+  </view>
+  <view class="btn-addcart" bindtap="setCart">
+    加入购物车
+  </view>
+  <view class="btn-buy" bindtap="buyNow">
+    立即购买
+  </view>
+</view>
+
+<!-- <view class="spec-area">
+  商品分类
+  <view class="spec-list">
+    <view class="spec-item">红色</view>
+  </view>
+</view> -->

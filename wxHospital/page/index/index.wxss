@@ -1,0 +1,140 @@
+/* page/index/index.wxss */
+.banners{
+  width: 100%;
+}
+.menu{
+  padding: 16rpx 30rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+.icon-menu{
+  width: 52rpx;
+  height: 68rpx;
+  float: left;
+  margin-right: 30rpx;
+}
+.menu text{
+  line-height: 68rpx;
+  font-size: 32rpx;
+}
+.cate-list{
+  background-color: #fff;
+  padding: 60rpx 0;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  font-size: 26rpx;
+}
+.cate-item{
+  text-align:center;
+  width: 33%;
+  margin-bottom: 32rpx;
+  position: relative;
+}
+.cate-item image{
+  width: 153rpx;
+  height: 153rpx;
+  margin-bottom: 6rpx;
+}
+.mar-m{
+  margin-top: 30rpx;
+}
+.block-list{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  padding: 50rpx 30rpx;
+  position: relative;
+}
+.block-list image{
+  width: 47%;
+  margin-bottom: 26rpx;
+}
+
+.evaluate-list{
+  background-color: #fff;
+  padding-bottom: 120rpx;
+}
+.evaluate-item{
+  overflow: hidden;
+  padding: 30rpx;
+}
+.head-img{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+  margin-top: 30rpx;
+}
+.evaluate-text{
+  float: left;
+  width: 85%;
+  margin-left: 20rpx;
+  font-size: 22rpx;
+  position: relative;
+}
+.item-name{
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  font-weight: 800;
+}
+.tops{
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.tops image{
+  width: 42rpx;
+  height: 42rpx;
+  float: left;
+  margin-right: 6rpx;
+}
+.tops view{
+  float: left;
+}
+
+
+.b-menu{
+  height: 120rpx;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.menu-i,.menu-q,.menu-y{
+  float: left;
+  width: 33%;
+  line-height: 120rpx;
+  position: relative;
+  overflow: hidden;
+}
+.menu-i image,.menu-q image,.menu-y image{
+  width: 63rpx;
+  margin-top: 30rpx;
+  margin-left: 36rpx;
+  float: left;
+}
+.menu-i image{
+  margin-left: 70rpx;
+}
+.menu-i,.menu-q{
+  border-right: 2rpx solid #fff;
+}
+.b-menu text{
+  float: left;
+}
+.more{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.pad-weapp{
+  padding: 40rpx;
+}
+.pad-weapp contact-button{
+  margin: 10rpx;
+}
+

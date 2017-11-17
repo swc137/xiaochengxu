@@ -1,0 +1,80 @@
+
+.top-address{
+  background: #fff;
+  padding: 20rpx 30rpx;
+  margin: 20rpx 0;
+  overflow: hidden;
+  position: relative;
+}
+.top-address image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.address-detail{
+  width: 86%;
+  float: left;
+  margin-left: 70rpx;
+}
+.order-detail{
+  padding-bottom: 100rpx;
+}
+.order-product{
+  padding: 20rpx 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+.order-product image{
+  width: 180rpx;
+  height: 180rpx;
+  background: #ddd;
+}
+.product-detail{
+  float: left;
+  width: 66%;
+  margin-left: 20rpx;
+}
+.product-price{
+  position: absolute;
+  bottom: 20rpx;
+  left: 230rpx;
+  width: 62%;
+}
+.product-num{
+  color: #999;
+}
+.order-line{
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  padding: 0 30rpx;
+}
+.mar-b{
+  margin-bottom: 20rpx;
+}
+.btn-area{
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  width: 97%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  border-top: 1px solid #ddd;
+  padding-left: 3%;
+}
+.btn-order{
+  float: right;
+  width: 30%;
+  text-align: center;
+  background: #42ab49;
+  color: #fff;
+}
+.choose{
+  padding-left: 80rpx;
+}

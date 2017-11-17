@@ -1,0 +1,89 @@
+<form bindsubmit="formSubmit">
+  <input name="user_id" value="{{user_id}}" hidden/>
+  <view wx:if="{{information_id != ''}}">
+    <input name="information_id" value="{{information_id}}" hidden/>
+  </view>
+  <!-- 1.单位 -->
+  <view class="top-menu">
+    <view class="menu-item active">1.单位</view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">单位名称<text class="color-o">*</text></text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入单位名称' data-id="company_name" name="info[company_name]" value="{{company_name}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">联系地址</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入联系地址' data-id="company_address" name="info[company_address]" value="{{company_address}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">邮编</text>
+    <view class="f-right">
+      <input type='digit' maxlength='6' placeholder='请输入邮编' data-id="zip_code" name="info[zip_code]" value="{{zip_code}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <!-- 2.发票 -->
+  <view class="top-menu mar-t">
+    <view class="menu-item active">2.发票</view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">发票种类<text class="color-o">*</text></text>
+    <view class="f-right">
+      <input name="info[invoice_type]" value="{{typeIndex/1+1}}" hidden />
+      <picker bindchange="bindInvoice" value="{{invoice_type[typeIndex]}}" range="{{invoice_type}}">
+        <view class="picker">
+          {{invoice_type[typeIndex].length > 0?invoice_type[typeIndex]:'请选择发票种类'}}
+        </view>
+      </picker>
+    </view>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="f-line">
+    <text class="f-title">发票抬头<text class="color-o">*</text></text>
+    <view class="f-right">
+      <input type='text' placeholder='填写准确的抬头名称' data-id="invoice_title" name="info[invoice_title]" value="{{invoice_title}}" bindinput="inInput"/>
+    </view>
+  </view>
+
+    <view class="f-line">
+      <text class="f-title">纳税人识别号</text>
+      <view class="f-right">
+        <input type='text' placeholder='请输入纳税人识别号' data-id="invoice_taxpayer_number" name="info[invoice_taxpayer_number]" value="{{invoice_taxpayer_number}}" bindinput="inInput"/>
+      </view>
+    </view>
+    <view class="f-line">
+      <text class="f-title">单位地址</text>
+      <view class="f-right">
+        <input type='text' placeholder='请输入单位地址' data-id="invoice_company_address" name="info[invoice_company_address]" value="{{invoice_company_address}}" bindinput="inInput"/>
+      </view>
+    </view>
+    <view class="f-line">
+      <text class="f-title">公司电话</text>
+      <view class="f-right">
+        <input type='text' placeholder='请输入公司电话号码' data-id="invoice_company_phone" name="info[invoice_company_phone]" value="{{invoice_company_phone}}" bindinput="inInput"/>
+      </view>
+    </view>
+    <view class="f-line">
+      <text class="f-title">开户银行</text>
+      <view class="f-right">
+        <input type='text' placeholder='收票单位开户银行' data-id="invoice_bank" name="info[invoice_bank]" value="{{invoice_bank}}" bindinput="inInput"/>
+      </view>
+    </view>
+    <view class="f-line">
+      <text class="f-title">银行账号</text>
+      <view class="f-right">
+        <input type='text' placeholder='收票单位开户行账号' data-id="invoice_card_number" name="info[invoice_card_number]" value="{{invoice_card_number}}" bindinput="inInput"/>
+      </view>
+    </view>
+
+  <view class="f-line">
+    <text class="f-title">备注</text>
+    <view class="f-right">
+      <input type='text' placeholder='填写备注' data-id="invoice_remark" name="info[invoice_remark]" value="{{invoice_remark}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <button formType="submit">下一步</button>
+</form>

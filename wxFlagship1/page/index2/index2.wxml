@@ -1,0 +1,67 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="coupon">
+  <view>优惠券<text class="more">更多 ></text></view>
+  <view class="coupon-list">
+    <image src='../../image/coupon.png'></image>
+    <image src='../../image/coupon.png'></image>
+    <image src='../../image/coupon.png'></image>
+  </view>
+</view>
+
+<view class="product-list">
+  <view class="title">商品类别<text class="more">更多 ></text></view>
+  <view class="list">
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+    <view class="product-item">
+      <image></image>
+      <view class="product-name more-overflow">泡澡缸陶瓷洗浴缸定做韩式洗浴缸韩式洗浴缸</view>
+      <view class="color-f2">¥16.00</view>
+    </view>
+  </view>
+</view>
+
+<view class="news-list">
+  <view>资讯<text class="more">更多 ></text></view>
+  <view class="news-item">
+    <image src=''></image>
+    <view class="news-content">
+      <view class="news-title overflow">夜晚下馆子这家店最好！</view>
+      <view class="color-9 more-overflow">美味的西式餐点，生活变得有情调，生活变得有情调，生活变得有情调，重温浪漫好滋味...</view>
+    </view>
+  </view>
+  <view class="news-item">
+    <image src=''></image>
+    <view class="news-content">
+      <view class="news-title overflow">夜晚下馆子这家店最好！</view>
+      <view class="color-9 more-overflow">美味的西式餐点，生活变得有情调，生活变得有情调，生活变得有情调，重温浪漫好滋味...</view>
+    </view>
+  </view>
+  <view class="news-item">
+    <image src=''></image>
+    <view class="news-content">
+      <view class="news-title overflow">夜晚下馆子这家店最好！</view>
+      <view class="color-9 more-overflow">美味的西式餐点，生活变得有情调，生活变得有情调，生活变得有情调，重温浪漫好滋味...</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+@import "../company/company.wxss";
+.top-menu{
+  margin-bottom: 0;
+  border-bottom: 2rpx solid #ddd;
+}

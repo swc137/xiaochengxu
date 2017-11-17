@@ -1,0 +1,170 @@
+.top-bg{
+  height: 480rpx;
+  position: relative;
+  text-align: center;
+  background: #A12331;
+  margin-bottom: 20rpx;
+}
+.top-title{
+  color: #fff;
+  font-size: 32rpx;
+}
+.top-head{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-top: 60rpx;
+  border: 2rpx solid #fff;
+  box-sizing: border-box;
+}
+.top-menu{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.m-item{
+  color: #fff;
+  width: 33%;
+}
+.m-item image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+swiper{
+  height: 400rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+.menu{
+  overflow: hidden;
+  padding: 40rpx 0;
+  background-color: #fff;
+}
+.menu-item{
+  width:25%;
+  float:left;
+  text-align:center;
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+}
+.menu-item image{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  box-shadow:4rpx 6rpx 8rpx #ddd;
+  border-radius:50%;
+}
+.menu-item text{
+  margin-top: 10rpx;
+}
+.accessory{
+  position:relative;
+  height: 300rpx;
+}
+.accessory .index1{
+  width: 50%;
+  height: 300rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.accessory .index2{
+  width: 50%;
+  height: 150rpx;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.accessory .index3{
+  width: 50%;
+  height: 150rpx;
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+.banner_center{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 28rpx;
+}
+.product{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.product-list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.product-item{
+  width: 48%;
+  margin-top: 30rpx;
+}
+.product-item image{
+  height: 320rpx;
+  width: 100%;
+  background-color:#efefef;
+  box-shadow:4rpx 12rpx 16rpx #bbb;
+}
+
+.page-body-line{
+  position:fixed;
+  bottom:60rpx;
+  right:20rpx;
+  width:78rpx;
+  height:78rpx;
+  background-color: #2072cf;
+  border-radius: 50%;
+}
+.page-body-line contact-button{
+  position: absolute;
+  top: 14rpx;
+  left: 12rpx;
+}
+.more{
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  color: #2072cf;
+}
+.news{
+  margin: 20rpx 30rpx 30rpx;
+  padding: 0 30rpx;
+  border: 2rpx solid #ddd;
+  box-shadow: 2px 2px 2px #ddd;
+  background-color: #FF6A6A;
+  color: #fff;
+}
+.news-item{
+  border-bottom: 2rpx solid #fff;
+}
+.news-item:last-child{
+  border-bottom: 0;
+}
+.news-item image{
+  width: 100%;
+  height: 320rpx;
+}
+.news-item .news-text{
+  width:auto;
+  padding: 18rpx 0;
+}
+.news-more{
+  text-align: center;
+  margin: 10rpx 0; 
+  color: #666;
+}

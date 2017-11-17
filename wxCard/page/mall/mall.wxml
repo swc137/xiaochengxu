@@ -1,0 +1,23 @@
+<view class="classify">
+  <scroll-view scroll-x class="cl-left">
+    <block wx:for="{{categoryList}}" wx:key="unique">
+      <view class="t-item overflow {{actList[index] ? 'active':''}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="getCateList">{{item.name}}</view>
+    </block>
+  </scroll-view>
+  <view class="cl-right">
+    <view class="r-list" wx:if="{{productList.length > 0}}">
+      <block wx:for="{{productList}}"  wx:key="unique">
+        <view class="r-item" data-id="{{item.md5_id}}" bindtap="toDetail">
+          <image src="{{imgUrl}}{{item.info.logo_img.value}}" class="fl"></image>
+          <view class="r-text fl more-overflow">{{item.info.title.value}}</view>
+        </view>
+      </block>
+    </view>
+    <view class="r-list no-data" wx:else>暂无数据!</view>
+  </view>
+</view>
+
+
+<view class="page-body-line">
+  <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+</view>

@@ -1,0 +1,55 @@
+
+<!--模板-->
+<template name="tempBubble">
+    <view class="bubble_box"  hidden="{{bubIsHide}}"  animation="{{animationData}}"> 
+        <text>{{bubMsg}}</text>
+    </view>
+</template>
+
+
+
+
+<!--调用示例-->
+<!--copy import、template-->
+<!--
+<import src="../bubble/bubble"/>
+<template is="tempBubble" data="{{bubMsg,bubIsHide,animationData}}" ></template>
+-->
+
+<!--copy js:ready方法实例化动画，且data增加变量bubIsHide-->
+  <!--
+  onReady:function(){
+    // 页面渲染完成
+    // 实例化一个动画
+    this.animation = wx.createAnimation({
+      timingFunction: 'linear'
+    })
+  },
+  -->
+  <!--data里面增加变量： 
+  ,
+     bubIsHide:true
+  -->
+
+
+<!--/*copy css:把该css copy到调用文件中即可*/-->
+<!--
+.bubble_box{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 30rpx;
+    color: #fff;
+    text-align: center;
+    border-radius: 15rpx;
+}
+-->
+
+

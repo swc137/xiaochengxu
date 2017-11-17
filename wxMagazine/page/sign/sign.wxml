@@ -1,0 +1,7 @@
+<view class="top-bg">
+  <image class="bg" src='{{imgUrl}}' mode='widthFix'></image>
+  <view class="btn-area">
+    <!-- <button bindtap="toSign"></button> -->
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="btn-phone">点击签到</button>
+  </view>
+</view>

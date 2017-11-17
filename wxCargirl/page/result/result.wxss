@@ -1,0 +1,32 @@
+/* page/result/result.wxss */
+.result-bg{
+  width: 100%;
+  height: 100%;
+  background: url('https://xiaochengxu2.zhuniu.com/upload/banner/aac878b5b7f55b2aef43f78e43a0a3e8.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.share-btn{
+  position: absolute;
+  bottom: 15%;
+  width: 60%;
+  height: 100rpx;
+  left: 20%;
+  opacity: 0;
+}
+.result-t{
+  background-color: #eb5e38;
+  color: #fff;
+  font-size: 60rpx;
+  text-align: center;
+  width: 70%;
+  height: 90rpx;
+  line-height: 90rpx;
+  position: absolute;
+  top: 22%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10rpx;
+  border: 4rpx solid #fff;
+}

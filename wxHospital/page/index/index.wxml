@@ -1,0 +1,285 @@
+<image src="../../image/banners.png" class="banners" mode="widthFix" bindtap="toDeatil"></image>
+<view class="menu">
+  <image src="../../image/i-menu.png" class="icon-menu"></image>
+  <text>快速查询疾病通道</text>
+</view>
+<view class="cate-list">
+  <view class="cate-item">
+    <image src="../../image/cate1.png"></image>
+    <view>内科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate2.png"></image>
+    <view>外科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate3.png"></image>
+    <view>肛肠科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate4.png"></image>
+    <view>妇科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate5.png"></image>
+    <view>男性泌尿科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate6.png"></image>
+    <view>不孕不育科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate7.png"></image>
+    <view>口腔科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate8.png"></image>
+    <view>耳鼻咽喉科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="cate-item">
+    <image src="../../image/cate9.png"></image>
+    <view>疼痛康复科</view>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+</view>
+
+<view class="menu mar-m">
+  <image src="../../image/i-menu.png" class="icon-menu"></image>
+  <text>足不出户  在家寻医问诊</text>
+</view>
+<view class="block-list">
+  <image src="../../image/block1.png" mode="widthFix"></image>
+  <image src="../../image/block2.png" mode="widthFix"></image>
+  <image src="../../image/block3.png" mode="widthFix"></image>
+  <image src="../../image/block4.png" mode="widthFix"></image>
+  <view class="weapp pad-weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+       <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+</view>
+
+<view class="menu">
+  <image src="../../image/i-menu.png" class="icon-menu"></image>
+  <text>真实评价</text>
+</view>
+
+<view class="evaluate-list">
+  <view class="evaluate-item">
+    <image src="../../image/head-img1.png" class="head-img"></image>
+    <view class="evaluate-text">
+      <view class="item-name">沙漠里的花</view>
+      <view>开始来的时候还觉得会尴尬，到这里才知道有男女分诊。一下子顾虑都没有了！</view>
+      <view class="tops">
+        <image src="../../image/icon-top.png"></image>
+        <view>8153</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="evaluate-item">
+    <image src="../../image/head-img2.png" class="head-img"></image>
+    <view class="evaluate-text">
+      <view class="item-name">玻璃心</view>
+      <view>排队的人太多了，这么热的天还好有空调。环境还不错！</view>
+      <view class="tops">
+        <image src="../../image/icon-top.png"></image>
+        <view>7923</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="evaluate-item">
+    <image src="../../image/head-img3.png" class="head-img"></image>
+    <view class="evaluate-text">
+      <view class="item-name">馨平</view>
+      <view>结婚好几年了都没孩子，考虑了好久才找卜主任看看的，3个月就怀孕了，全家都开心死了。</view>
+      <view class="tops">
+        <image src="../../image/icon-top.png"></image>
+        <view>6980</view>
+      </view>
+    </view>
+  </view>
+<!-- <view class="more">下拉加载更多</view> -->
+</view>
+
+
+<view class="b-menu">
+  <view class="menu-i">
+    <image src="../../image/menu-index.png" mode="widthFix"></image>
+    <text>首页</text>
+  </view>
+  <view class="menu-q">
+    <image src="../../image/menu-q.png" mode="widthFix"></image>
+    <text>快速问诊</text>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+  <view class="menu-y">
+    <image src="../../image/menu-y.png" mode="widthFix"></image>
+    <text>预约挂号</text>
+    <view class="weapp">
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+      <contact-button size="27" session-from="weapp" type="default-light"></contact-button>
+    </view>
+  </view>
+</view>

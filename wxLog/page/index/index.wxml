@@ -1,0 +1,46 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+  <view>联系电话：{{phone}}</view>
+  <view class="right-arrow"></view>
+</view>
+<view class="company_about v-line" bindtap="toAbout">
+  <view class="v-title">公司介绍</view>
+  <view class="more-overflow color-6">{{companyDesc}}</view>
+  <view class="right-arrow"></view>
+</view>
+
+<view class="product">
+  <view class="p-title">我们的服务</view>
+  <view class="menu">
+   <view class="menu-item" bindtap="getList">
+    <image src="../../image/public/nav1.png"></image>
+    <text>车辆展示</text>
+  </view>
+  <view class="menu-item" bindtap="getList">
+    <image src="../../image/public/nav2.png"></image>
+    <text>干线运输</text>
+  </view>
+  <view class="menu-item" bindtap="getList">
+    <image src="../../image/public/nav4.png"></image>
+    <text>物流仓储</text>
+  </view>
+  <view class="menu-item" bindtap="toAbout">
+    <image src="../../image/public/nav3.png"></image>
+    <text>企业文化</text>
+  </view>
+</view>
+  <view class="product-list">
+     <block wx:for="{{productList}}" wx:key="unique">
+      <view class="product-item" bindtap="navigate" data-val="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="scaleToFill"></image>
+        <view class="overflow">{{item.info.title.value}}</view>
+      </view>
+    </block> 
+  </view>
+</view>

@@ -1,0 +1,68 @@
+/* reset */
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 1.6;
+  font-family:'微软雅黑';
+  overflow-x:hidden;
+}
+.overflow{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hidden{
+  display:none;
+}
+.show{
+  display: block;
+}
+.p-title{
+  margin-top: 60rpx;
+  font-size: 32rpx;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+.p-title image{
+  width: 26rpx;
+  height: 26rpx;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.p-title .p-text{
+  color: #000;
+  text-align: center;
+}
+.p-title .p-text::before{
+  width: 60rpx;
+  height: 2rpx;
+  background-color: #ccc;
+  content: '';
+  position: absolute;
+  top: 47%;
+  left: 30%;
+}
+.p-title .p-text::after{
+  width: 60rpx;
+  height: 2rpx;
+  background-color: #ccc;
+  content: '';
+  position: absolute;
+  top: 47%;
+  right: 30%;
+}
+.more-overflow2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.clearfix{
+  overflow: hidden;
+}

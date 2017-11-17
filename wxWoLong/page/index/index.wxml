@@ -1,0 +1,33 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="company_about v-line" bindtap="toAbout">
+  <view class="v-title">菜馆介绍</view>
+  <view class="more-overflow color-6">卧龙菜馆，是一家以苏帮菜为主的餐厅。 餐厅环境很好，餐厅的门面制作的很有特色，以红色为底，白色的字体十分吸引人的眼球，走进餐厅大</view>
+  <view class="right-arrow"></view>
+</view>
+
+<view class="v-line border-b" bindtap='callPhone' data-val="{{phone}}">
+  <view><image src='../../image/public/i-phone.png' class="v-icon"></image>0512-67025670</view>
+  <view class="right-arrow"></view>
+</view>
+<view class="v-line" bindtap='toMap'>
+  <view><image src='../../image/public/i-address.png' class="v-icon"></image>江苏省苏州市平江区白塔东路329号</view>
+  <view class="right-arrow"></view>
+</view>
+
+<view class="product">
+  <view class="p-title">我们的产品<text class="more" bindtap='toProductList'>更多</text></view>
+  <view class="product-list">
+    <block wx:for="{{productList}}" wx:key="unique">
+      <view class="product-item" bindtap="navigate" data-val="{{item.id}}">
+        <image src="{{imgUrl}}{{item.logo}}" mode="scaleToFill"></image>
+        <view class="overflow">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+</view>

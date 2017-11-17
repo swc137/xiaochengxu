@@ -1,0 +1,17 @@
+<!--pages/resultSucc/resultSucc.wxml-->
+<view class="wrapper">
+    <view class="content border-t border">
+    <view class="banner">
+        <image class="icon-image" src="http://paymenttest.bankcomm.com/app/mobile1/wximg/sjk/ready.jpg"></image>
+        </view>
+        <view class="title_box font_20">
+            <text class="title">{{succTit}}</text>
+        </view>
+        <!--<view class="desc_box font_26 color_99">
+            <text class="desc">{{desc}}</text>
+        </view>-->
+    </view>
+</view>
+
+
+

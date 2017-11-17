@@ -1,0 +1,26 @@
+<!--person.wxml-->
+<view class="top-area">
+  <image src="../../image/public/background.png" class="background"></image>
+  <image src="../../image/public/head-logo.png" class="head-logo"></image>
+  <text>{{username}}</text>
+</view>
+<view class="btn-area" hidden="{{loginHidden}}">
+  <view class="btn-register" bindtap="toReg">
+    <image src="../../image/public/register.png" ></image>
+    <text>注册</text>
+  </view>
+  <view class="btn-login"  bindtap="toLogin">  
+    <image src="../../image/public/login.png"></image>
+    <text>登录</text>
+  </view>
+</view>
+<view class="menu-area" hidden="{{menuHidden}}">
+  <view class="line mall" bindtap="toMall">
+    <image src="../../image/public/icon-mall.png"></image>
+    <text>戟速商城</text>
+  </view>
+  <view class="line news" bindtap="toNews">
+    <image src="../../image/public/icon-news.png"></image>
+    <text>新闻资讯</text>
+  </view>
+</view>

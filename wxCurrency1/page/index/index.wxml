@@ -1,0 +1,35 @@
+<swiper indicator-color="#dddddd" indicator-active-color="#99ceee"	indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="swiper-img"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="index-content">
+  <view class="content-menu">
+    <view class="menu-product {{menuActive[0]?'active':''}}" data-index="0" bindtap="changeMenu">商品</view>
+    <view class="menu-classify {{menuActive[1]?'active':''}}" data-index="1" bindtap="changeMenu">分类</view>
+  </view>
+  <view class="product-list" hidden="{{menuActive[0]?'':'hidden'}}">
+    <block wx:for="{{productList}}"  wx:key="unique">
+      <view class="product-item" bindtap="toDetail" data-id="{{item.md5_id}}">
+        <image src="{{imgUrl}}{{item.info.logo_img.value}}" mode="" class="fl"></image>
+        <view class="fr item-content">
+          <view class="more-overflow">{{item.info.title.value}}</view>
+          <view class="item-price">¥{{item.info.price.value}}</view>
+        </view> 
+      </view>
+    </block>
+    <view class="loading" bindtap='toMall'>查看更多></view>
+  </view>
+  <view class="category-list" hidden="{{menuActive[1]?'':'hidden'}}">
+    <block wx:for="{{categoryList}}"  wx:key="unique">
+      <view class="category-item" data-id="{{item.link}}" data-name="{{item.name}}" bindtap="toCateGory">
+        <image src="{{imgUrl}}{{item.logo}}"></image>
+        <view class="category-overlay"></view>
+        <text class="category-txt">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

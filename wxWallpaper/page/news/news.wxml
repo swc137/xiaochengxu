@@ -1,0 +1,7 @@
+<view class="news">
+  <block wx:for="{{news}}" wx:key="unique">
+    <view class="news-item" data-val="{{item.id}}" bindtap="newsDetail">
+      <view class="overflow news-text">{{item.title}}</view>
+    </view>
+  </block>
+</view> 

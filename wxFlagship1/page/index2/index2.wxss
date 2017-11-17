@@ -1,0 +1,107 @@
+/*轮播图*/
+swiper{
+  height: 400rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+
+/*优惠券*/
+.coupon{
+  background: #fff;
+  padding: 20rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.coupon-list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.coupon-list image{
+  margin-top: 20rpx;
+  width: 31%;
+  height: 120rpx;
+}
+
+/*产品图*/
+.goods-item{
+  background: #fff;
+  margin-top: 20rpx;
+}
+.goods-item image{
+  width: 100%;
+  height: 350rpx;
+}
+.goods-info{
+  padding: 10rpx 30rpx;
+}
+.goods-bottom{
+  overflow: hidden;
+}
+.goods-price{
+  font-size: 32rpx;
+  display: inline-block;
+  margin-top: 8rpx;
+}
+.look{
+  display: inline-block;
+  padding: 6rpx 20rpx;
+  background: #42ab49;
+  color: #fff;
+  border-radius: 10rpx;
+}
+/*热门商品*/
+.product-list{
+  background: #fff;
+  margin: 20rpx 0;
+  padding-top: 20rpx;
+}
+.product-list .title{
+  text-align: center;
+  padding: 0 30rpx;
+}
+.list{
+  display: flex;
+  flex-flow:row wrap;
+  align-items:center;
+  justify-content: space-between; 
+   padding: 30rpx 30rpx 0;
+}
+.product-item{
+  width: 48%;
+  padding-bottom: 20rpx;
+}
+.product-item image{
+  width: 100%;
+  height: 330rpx;
+  background: #eee;
+}
+/*资讯*/
+.news-list{
+  padding: 20rpx 30rpx 0;
+  background: #fff;
+}
+.news-item{
+  border-bottom: 2rpx solid #ddd;
+  padding: 20rpx 0;
+  overflow: hidden;
+}
+.news-item image{
+  width: 33%;
+  height: 180rpx;
+  background: #eee;
+  float: left;
+}
+.news-content{
+  width: 63%;
+  float: left;
+  margin-left: 3%;
+}
+.news-title{
+  font-size: 32rpx
+}
+.more-overflow{
+  -webkit-line-clamp:3 !important;
+}

@@ -1,0 +1,75 @@
+.person-list{
+  padding-bottom: 98rpx;
+}
+.person-item{
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  position: relative;
+  border-bottom: 2rpx solid #eee;
+}
+.person-item .name{
+  font-size: 32rpx;
+}
+.person-item .name text{
+  color: #999;
+}
+.person-item .phone{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  color: #999;
+}
+.person-item .zhu{
+  position: absolute;
+  height: 45rpx;
+  top: 20rpx;
+  right: 60rpx;
+}
+.btn-bottom{
+  position: fixed;
+  bottom:0;
+  padding-left: 4%;
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 32rpx;
+  box-sizing: border-box;
+}
+.btn-left{
+  width: 63%;
+  float: left;
+}
+.btn-add{
+  width: 37%;
+  float: left;
+  height: 98rpx;
+  line-height: 100rpx;
+  color: #fff;
+  background-color: #ee8722;
+  text-align: center;
+}
+.btn-add image{
+  width: 35rpx;
+  height: 34rpx;
+}
+.noInfo{
+  color: #666;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.sign{
+  color: #ff6600;
+}
+.dis-sign{
+  color: #999;
+}
+.btn-modify{
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 30rpx;
+  background: #ee8722;
+  color: #fff;
+}
